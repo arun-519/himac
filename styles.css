@@ -8,42 +8,94 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
     min-height: 100vh;
-    padding-top: 80px;
+    /* Sticky header stays in normal flow; no offset needed */
+    padding-top: 0px;
 }
 
 /* Header Styles */
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: white;
+   background-color: #ffffff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* spacing only: keep header tight like reference */
+    padding: 0 3%;
+    position:sticky;
+    top: 0;
     z-index: 1000;
-    padding: 15px 0;
 }
-
 .header-content {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 30px;
+    /* spacing only: reduce extra horizontal/vertical padding */
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* Allow wrapping on medium screens so nav can move below logo if needed */
+    flex-wrap: wrap;
+    row-gap: 10px;
 }
 
 .logo {
-    display: flex;
+    display:flex;
     align-items: center;
-    gap: 8px;
+    /* spacing only */
+    gap: 10px;
     font-size: 28px;
     font-weight: bold;
+}
+
+.logo-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* spacing only */
+    gap: 2px;
+}
+
+.himac-logo {
+    width: 120px;
+    height: auto;
+    object-fit:cover;
+}
+
+.hit-logo {
+    width: 1px;
+    height:min-content;
+    object-fit: contain;
 }
 
 .logo img {
     width: 200px;
     height: 100px;
     object-fit: contain;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    white-space: nowrap;
+    /* spacing only: tighter vertical rhythm */
+    line-height: 1.15;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    animation: gradient-shift 3s ease infinite;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+@keyframes gradient-shift {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
 
@@ -89,11 +141,14 @@ body {
     font-weight: 500;
     transition: color 0.3s;
     cursor: pointer;
+    position: relative;
 }
 
 .nav-link:hover {
     color: #d32f2f;
 }
+
+
 
 .profile-btn {
     width: 40px;
@@ -118,6 +173,250 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     padding: 40px 30px;
+}
+
+/* Title Sponsor Banner */
+.title-sponsor-section {
+    margin-bottom: 25px;
+}
+
+.title-sponsor-pill {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #d32f2f 0%, #ff7043 100%);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.title-sponsor-card {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffebee 100%);
+    border-radius: 16px;
+    padding: 18px 22px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #d32f2f;
+    display: flex;
+    align-items: center;
+    /* Allow the pill to stay fixed while marquee scrolls only in its own area */
+    overflow:hidden;
+}
+
+.title-sponsor-marquee {
+    /* Marquee occupies only the space to the right of the pill */
+    flex: 1;
+    display:flex;
+    white-space:initial;
+    overflow: hidden;
+    animation: title-sponsor-scroll 18s linear infinite;
+}
+.title-sponsor-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+@keyframes title-sponsor-scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.title-sponsor-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #b71c1c;
+    margin-bottom: 4px;
+}
+
+.title-sponsor-tagline {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.title-sponsor-logo {
+    max-width: 160px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Sponsors Section - Single Card */
+.sponsors-grid {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding: 30px 0;
+}
+
+.sponsors-card {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    border: 3px solid #d32f2f;
+}
+
+.sponsors-card-content {
+    padding: 30px;
+}
+
+.sponsors-card-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sponsor-category {
+    margin-bottom: 30px;
+}
+
+.sponsor-category-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #d32f2f;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sponsor-logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.sponsor-card-logo {
+    max-width: 180px;
+    max-height: 120px;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+}
+
+.sponsor-card-logo:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+}
+
+/* Event Marquee Styles */
+.event-marquee-section {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffebee 100%);
+    border-radius: 16px;
+    padding: 18px 22px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.event-marquee {
+    flex: 1;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: event-scroll 15s linear infinite;
+}
+
+@keyframes event-scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Medium breakpoint tweaks (tablets / small laptops) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .header {
+        padding: 0 3%;
+    }
+
+    .header-content {
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        width: 150px;
+        height: 75px;
+    }
+
+    .himac-logo {
+        width: 100px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+    
+    .nav {
+        gap: 16px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+}
+
+/* Small mobile: ensure marquee works with proper spacing */
+@media (max-width: 600px) {
+    .title-sponsor-card {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 14px;
+    }
+
+    .title-sponsor-pill {
+        font-size: 11px;
+        padding: 4px 12px;
+        flex-shrink: 0;
+    }
+
+    .title-sponsor-marquee {
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .title-sponsor-text {
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+    .title-sponsor-logo {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .title-sponsor-name {
+        font-size: 16px;
+    }
+    .logo-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-sponsor-card {
+        padding: 14px 16px;
+    }
+
+    .title-sponsor-logo {
+        max-width: 140px;
+    }
 }
 
 .events-grid {
@@ -162,6 +461,113 @@ body {
 
 .event-card:hover .event-img {
     transform: scale(1.05);
+}
+
+.sponsor-note {
+    margin-top: 10px;
+    color: #333;
+    line-height: 1.45;
+}
+
+.sponsor-links {
+    margin-top: 12px;
+}
+
+.sponsor-links a {
+    color: #d32f2f;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sponsor-links a:hover {
+    text-decoration: underline;
+}
+
+/* Sponsor Modal Card */
+.sponsor-modal-card {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.sponsor-modal-image {
+    flex: 0 0 300px;
+}
+
+.sponsor-modal-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.sponsor-modal-info {
+    flex: 1;
+}
+
+.sponsor-modal-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.sponsor-modal-description {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.sponsor-modal-description p {
+    margin-bottom: 10px;
+}
+
+.sponsor-modal-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.sponsor-modal-link {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.website-link {
+    background: #d32f2f;
+    color: white;
+}
+
+.website-link:hover {
+    background: #b71c1c;
+    box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
+}
+
+.instagram-link {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+}
+
+.instagram-link:hover {
+    opacity: 0.9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .sponsor-modal-card {
+        flex-direction: column;
+    }
+
+    .sponsor-modal-image {
+        flex: 0 0 auto;
+        max-width: 100%;
+    }
 }
 
 .event-image-placeholder {
@@ -219,6 +625,11 @@ body {
     background: linear-gradient(135deg, #9C27B0 0%, #7B1FA2 100%);
 }
 
+/* Vibrant Ventures image background */
+.vibrant-img {
+    background: linear-gradient(135deg, #00BCD4 0%, #00838F 100%);
+}
+
 .event-info {
     padding: 20px;
 }
@@ -246,6 +657,9 @@ body {
 .event-date.yellow { color: #13a460; }
 .event-date.brown { color: #795548; }
 .event-date.lime { color: #e49859; }
+.event-date.gold { color: #FFD700; }
+.event-date.cyan { color: #00BCD4; }
+    
 
 .register-btn {
     width: 100%;
@@ -278,6 +692,9 @@ body {
 .yellow-btn { background: #13a460; }
 .brown-btn { background: #795548; }
 .lime-btn { background: #e49859; }
+.cyan-btn { background: #00BCD4; }
+.gold-btn { background: #FFD700; }
+    
 
 /* Modal Styles */
 .modal {
@@ -320,8 +737,62 @@ body {
 /* Modals with home page background */
 #aboutModal .modal-content,
 #eventModal .modal-content,
-#contactModal .modal-content {
+#contactModal .modal-content,
+#guidanceModal .modal-content,
+#eventGuidanceModal .modal-content {
     background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+}
+
+/* Map Modal Styles */
+.map-modal-content {
+    max-width: 900px;
+    max-height: 90vh;
+}
+
+.map-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.address-info {
+    text-align: center;
+}
+
+.map-container {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    display: block;
+}
+
+.map-actions {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.map-link-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #2196F3;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.map-link-btn:hover {
+    background: #1976D2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
 }
 
 @keyframes slideUp {
@@ -376,6 +847,65 @@ body {
     margin: 30px 0 15px 0;
     padding-bottom: 10px;
     border-bottom: 2px solid #e0e0e0;
+}
+
+.section-title:first-child {
+    margin-top: 0;
+}
+
+/* General Guidance Section */
+.general-guidance-section {
+    margin-bottom: 30px;
+}
+
+.guidance-box {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    border-radius: 12px;
+    padding: 20px;
+    border-left: 5px solid #FF9800;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.guidance-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.guidance-list li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.guidance-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #FF9800;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.guidance-list li strong {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Event-specific guidelines (e.g. Stock War) */
+.event-guidance-box {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    border-radius: 12px;
+    padding: 20px;
+    border-left: 5px solid #4CAF50;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-image {
+    cursor: default;
 }
 
 .event-item {
@@ -497,6 +1027,42 @@ body {
     margin-bottom: 20px;
 }
 
+.vision-mission-section {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.vision-mission-box {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid #667eea;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vision-mission-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.vision-mission-text {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.vision-mission-text:last-child {
+    margin-bottom: 0;
+}
+
+
 .sponsor-list {
     list-style: none;
     padding-left: 0;
@@ -614,6 +1180,11 @@ body {
     border-color: #E91E63;
 }
 
+.social-link.facebook {
+    background: linear-gradient(135deg, #e8f0fe 0%, #d2e3fc 100%);
+    border-color: #113a70;
+}
+
 .social-link.linkedin {
     background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
     border-color: #2196F3;
@@ -651,6 +1222,14 @@ body {
 .social-link.instagram .social-icon svg {
     stroke: white;
     fill: white;
+}
+
+.social-link.facebook .social-icon {
+    background: #1877F2;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
 }
 
 .social-link.linkedin .social-icon {
@@ -909,13 +1488,21 @@ body {
         height: 60px;
     }
 
+    .himac-logo {
+        width: 80px;
+        height: auto;
+    }
+
+    .logo-text {
+        font-size: 14px;
+        letter-spacing: 0.3px;
+    }
+
     .hamburger-menu {
         display: flex;
-        order: 3;
     }
 
     .profile-btn {
-        order: 2;
         margin-left: auto;
         margin-right: 15px;
     }
@@ -953,6 +1540,39 @@ body {
         border-bottom: none;
     }
 
+    .nav-dropdown {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        padding: 0;
+        margin-top: 0;
+        background: #f9f9f9;
+        border-radius: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .nav-dropdown.active .dropdown-menu {
+        max-height: 1000px;
+    }
+
+    .dropdown-section {
+        padding: 10px 20px;
+        margin-bottom: 0;
+    }
+
+    .dropdown-item {
+        padding: 10px 20px;
+        margin-left: 10px;
+    }
+
     .events-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -962,9 +1582,7 @@ body {
         padding: 20px 15px;
     }
 
-    body {
-        padding-top: 80px;
-    }
+    body { padding-top: 0px; }
 
     .modal-content {
         width: 95%;
@@ -1004,5 +1622,40 @@ body {
         width: 120px;
         margin-bottom: 15px;
     }
+
+    .vision-mission-box {
+        padding: 20px;
+    }
+
+    .vision-mission-title {
+        font-size: 18px;
+    }
+
+    .vision-mission-text {
+        font-size: 14px;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+
+    .map-modal-content {
+        max-width: 95%;
+    }
+
+    .guidance-box {
+        padding: 15px;
+    }
+
+    .guidance-list li {
+        font-size: 14px;
+        padding: 8px 0;
+        padding-left: 25px;
+    }
+
+    .guidance-list li::before {
+        font-size: 18px;
+    }
+
 }
 
