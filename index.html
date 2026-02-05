@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HiMaC 2026 Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Playfair+Display:wght@700&family=Alice&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,8 +14,16 @@
     <header class="header">
         <div class="header-content">
             <div class="logo">
-                <img src="images/himac.jpg" alt="HIMAC LOGO" class="event-img">
+                <img src="images/hicet-logo.jpg" alt="HICET LOGO" class="event-img">
+                <img src="images/hicet-logo.jpg" alt="HIT LOGO" class="event-img">
+                <div class="logo-text-container">
+                    <h2 class="logo-text" style="font-family: Alice; color: #2c3e50 !important; -webkit-text-fill-color: #2c3e50 !important;">Hindusthan Business School </h2>
+                    <p class="logo-text" style="font-family: Alice; font-size: 0.6em; color: #23d50c !important; -webkit-text-fill-color: #23d50c !important;">proudly presents</p>
+                    <img src="images/himac.jpg" alt="HIMAC LOGO" class="himac-logo">
+                
+                </div>
             </div>
+            
             <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -20,17 +31,41 @@
             </button>
             <nav class="nav" id="mainNav">
                 <a href="#about" class="nav-link" id="aboutLink">About</a>
-                <a href="#events" class="nav-link" id="eventsLink">Events</a>
-                <a href="#contacts" class="nav-link" id="contactsLink">Contacts</a>
+                <div class="nav-dropdown">
+                    <a href="#events" class="nav-link" id="eventsLink">Events</a>
+                    
+                </div>
+                <a href="#contacts" class="nav-link" id="contactsLink">Contact</a>
                 <a href="#map" class="nav-link">Map</a>
-                <a href="#sponsor" class="nav-link" id="sponsorLink">Sponsor</a>
+                <a href="#sponsor" class="nav-link" id="sponsorLink">Sponsors</a>
             </nav>
-            <div></div>
         </div>
     </header>
 
+    <!-- Event Marquee -->
+    <section class="event-marquee-section">
+        <div class="event-marquee">
+            <p class="logo-text" style="font-family: 'Alice'; color: #f85f06 !important; -webkit-text-fill-color: #f85f06 !important;">hindusthan management carnival 2026</p>
+        </div>
+    </section>
+
     <!-- Main Content -->
     <main class="main-content">
+        <!-- Title Sponsor Banner --><span class="title-sponsor-pill">Title Sponsor</span>
+        <section class="title-sponsor-section">
+            <div class="title-sponsor-card">
+                <!-- Static label for title sponsor -->
+                
+                <!-- Marquee only for inner content (logo + name) -->
+                <div class="title-sponsor-marquee">
+                    <div class="title-sponsor-text">
+                        <img src="images/titlesponsor.jpg" alt="Anuswaryaa Enterprises Private Limited Logo" class="title-sponsor-logo">
+                        <h2 class="title-sponsor-name">Anuswaryaa Enterprises Private Limited</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="events-grid" id="events">
             <!-- Event Cards -->
             <div class="event-card" data-event="bi-battle">
@@ -71,7 +106,7 @@
                     <img src="images/talent-show.jpg" alt="1 Minute Talent Show - Concert Stage" class="event-img">
                 </div>
                 <div class="event-info">
-                    <h3 class="event-title">1 Minute Talent Show</h3>
+                    <h3 class="event-title">Talent Show</h3>
                     <p class="event-date orange">06 March 2026</p>
                     <button class="register-btn orange-btn">Register Now</button>
                 </div>
@@ -110,12 +145,12 @@
                 </div>
             </div>
 
-            <div class="event-card" data-event="startup-expo">
+            <div class="event-card" data-event="Project-expo">
                 <div class="event-image startup-expo-img">
-                    <img src="images/startup-expo.jpg" alt="Startup Expo - Modern Office" class="event-img">
+                    <img src="images/Project-expo.jpg" alt="Project Expo - Modern Office" class="event-img">
                 </div>
                 <div class="event-info">
-                    <h3 class="event-title">Startup Expo</h3>
+                    <h3 class="event-title">Project Expo</h3>
                     <p class="event-date yellow">06 March 2026</p>
                     <button class="register-btn yellow-btn">Register Now</button>
                 </div>
@@ -142,8 +177,83 @@
                     <button class="register-btn lime-btn">Register Now</button>
                 </div>
             </div>
+
+            <div class="event-card" data-event="vibrant-ventures">
+                <div class="event-image vibrant-img">
+                    <img src="images/vibrant-ventures.jpg" alt="Vibrant Ventures - Entrepreneurship Event" class="event-img">
+                </div>
+                <div class="event-info">
+                    <h3 class="event-title">Vibrant Ventures</h3>
+                    <p class="event-date cyan">06 March 2026</p>
+                    <button class="register-btn cyan-btn">Register Now</button>
+                </div>
+            </div>
+            <div class="event-card" data-event="treasure-hunt">
+                <div class="event-image treasure-hunt-img">
+                    <img src="images/treasure-hunt.jpg" alt="Treasure Hunt - Adventure Game" class="event-img">
+                </div>
+                <div class="event-info">
+                    <h3 class="event-title">Treasure Hunt</h3>
+                    <p class="event-date gold">06 March 2026</p>
+                    <button class="register-btn gold-btn">Register Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sponsors Section -->
+        <div class="sponsors-grid" id="sponsor">
+           
+
+            <div class="event-card sponsors-card" data-event="sponsors">
+                <div class="sponsors-card-content">
+                    <h2 class="sponsors-card-title">Our Sponsors</h2>
+                    
+                    <div class="sponsor-category">
+                        <h3 class="sponsor-category-title">Title Sponsor</h3>
+                        <div class="sponsor-logos-container">
+                            <img src="images/titlesponsor.jpg" alt="Title Sponsor" class="sponsor-card-logo">
+                        </div>
+                    </div>
+
+                    <div class="sponsor-category">
+                        <h3 class="sponsor-category-title">Associate Sponsor</h3>
+                        <div class="sponsor-logos-container">
+                            <img src="images/associate.jpg" alt="Associate Sponsor" class="sponsor-card-logo">
+                        </div>
+                    </div>
+
+                    <div class="sponsor-category">
+                        <h3 class="sponsor-category-title">Support Sponsors</h3>
+                        <div class="sponsor-logos-container">
+                            <img src="images/supports.png" alt="Support Sponsor 1" class="sponsor-card-logo">
+                            <img src="images/support2s.png" alt="Support Sponsor 2" class="sponsor-card-logo">
+                            <img src="images/support3.jpg" alt="Support Sponsor 3" class="sponsor-card-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+
+    <!-- General Guidelines Popup (opens on load) -->
+    <div class="modal" id="guidanceModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeGuidanceModal">&times;</span>
+            <h2 class="modal-title">General Guidelines</h2>
+            <div class="modal-body">
+                <div class="guidance-box">
+                    <ul class="guidance-list">
+                        <li><strong>Kit will be provided</strong> for all the participants</li>
+                        <li>A student can participate in <strong>only one event</strong> </li>
+                        <li><strong>College ID card is mandatory</strong> for participant</li>
+                        <li>Team members should be in <strong>same college</strong></li>
+                        <li><strong>Dress code:</strong> Smart casual & Formal Dress only allowed</li>
+                        <li>Any form of malpractice will lead to <strong>immediate disqualification</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Event Details Modal -->
     <div class="modal" id="eventModal">
@@ -152,6 +262,17 @@
             <h2 class="modal-title">HiMaC 2026 Events</h2>
             <div class="modal-body" id="modalBody">
                 <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Guidelines Modal (opens on event card image click) -->
+    <div class="modal" id="eventGuidanceModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeEventGuidanceModal">&times;</span>
+            <h2 class="modal-title" id="eventGuidanceTitle">Event Guidelines</h2>
+            <div class="modal-body" id="eventGuidanceBody">
+                <!-- Content filled by script -->
             </div>
         </div>
     </div>
@@ -180,7 +301,40 @@
                 <div class="quote-box">
                     <p class="quote">"Hindusthan College of Engineering and Technology march towards greatness by following the educational doctrines of our beloved leader, Dr APJ Abdul Kalam in transforming the youth of today to become leaders of tomorrow."</p>
                 </div>
-                <h2 class="about-title">About HIMAC</h2>
+                
+                <h2 class="about-title">About Department</h2>
+                <p class="about-text">
+                    Department of Management Science was established in the year 2005, with a view to impart professional education in the field of business management. The MBA programme is affiliated to Anna University, Chennai and approved by All India Council of Technical Education (AICTE), New Delhi. The college offers full time two years MBA Degree Programme.
+                </p>
+                <p class="about-text">
+                    A team of dedicated faculty members continuously monitor the corporate requirements and accordingly the students are trained in managerial skills, communication skills and leadership qualities. The faculty members with their extensive knowledge and industrial exposure strive to bring a real life experience into the classroom. The sanctioned intake of the MBA department is 120 students from the academic year 2024-2025 onwards.
+                </p>
+                <p class="about-text">
+                    Our students are well placed in corporates likes Oracle, JSW Steel, Swiggy, LeMeridien, CareerNet Consulting, Muthooot Finance, KGiSL, IndusInd Bank, Hexaware technologies, State bank of India, IBM, Parle, Udaan, BYJU, Canara bank, HCL, Reliance Retail, etc.
+                </p>
+                
+                <div class="vision-mission-section">
+                    <div class="vision-mission-box">
+                        <h3 class="vision-mission-title">VISION</h3>
+                        <p class="vision-mission-text">
+                            Emerge as a premier business school recognized globally for management education, practice and research that propels lifelong learning with ethical and professional values.
+                        </p>
+                    </div>
+                    <div class="vision-mission-box">
+                        <h3 class="vision-mission-title">MISSION</h3>
+                        <p class="vision-mission-text">
+                            <strong>M1:</strong> Promote a collaborative learning environment that delivers the best in teaching, research, and innovation with a global perspective.
+                        </p>
+                        <p class="vision-mission-text">
+                            <strong>M2:</strong> Imbibe entrepreneurial and innovative capabilities to manage change and transformation across various disciplines of management practices.
+                        </p>
+                        <p class="vision-mission-text">
+                            <strong>M3:</strong> Nurture professional and ethical responsibilities related to industry, society, and environment.
+                        </p>
+                    </div>
+                </div>
+                
+                <h2 class="about-title">About HiMaC</h2>
                 <p class="about-text">
                     Hindusthan Management Carnival (HiMaC) is an intercollegiate management fest designed to showcase managerial talent through competitions which include business quizzes, case studies, marketing challenges, startup pitches, management games, and cultural performances. This carnival also provides a unique platform for students across various colleges to engage, compete, network, and learn.
                 </p>
@@ -196,9 +350,17 @@
             <div class="modal-body">
                 <div class="contact-section">
                     <h3 class="contact-section-title">HiMaC 2026 Organising Committee</h3>
+                    <div class="contact-person">
+                        <div class="contact-name">Dr V Kanimozhi</div>
+                        <div class="contact-role">Associate Professor / MBA</div>
+                        <div class="contact-info">
+                            <a href="tel:9080702602" class="contact-link">9894793391</a>
+                            <a href="mailto:kanimozhi.mba@hicet.ac.in" class="contact-link">kanimozhi.mba@hicet.ac.in</a>
+                        </div>
+                    </div>
                     
                     <div class="contact-person">
-                        <div class="contact-name">Shanmugapriyan V</div>
+                        <div class="contact-name">Mr. Shanmugapriyan V</div>
                         <div class="contact-role">Chairman, Department of Management Sciences</div>
                         <div class="contact-info">
                             <a href="tel:9080702602" class="contact-link">9080702602</a>
@@ -206,11 +368,11 @@
                         </div>
                     </div>
                     <div class="contact-person">
-                        <div class="contact-name">Karthik </div>
+                        <div class="contact-name">Mr. Karthik </div>
                         <div class="contact-role">Vice Chairman, Department of Management Sciences</div>
                         <div class="contact-info">
                             <a href="tel:9080702602" class="contact-link">7550372443</a>
-                            <a href="mailto:720724206076@hicet.ac.in" class="contact-link">720724206076@hicet.ac.in</a>
+                            <a href="mailto:720725206018@hicet.ac.in" class="contact-link">720725206018@hicet.ac.in</a>
                         </div>
                     </div>
                 </div>
@@ -236,14 +398,42 @@
                                 <div class="social-handle">@hicet_b_school</div>
                             </div>
                         </a>
-                        <a href="https://linkedin.com" target="_blank" class="social-link linkedin">
+                        <a href="https://www.instagram.com/hindusthan.hicet" target="_blank" rel="noopener noreferrer" class="social-link instagram">
+                            <div class="social-icon instagram-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <circle cx="17" cy="7" r="1" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="social-info">
+                                <div class="social-name">Instagram</div>
+                                <div class="social-handle">@hindusthan.hicet</div>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/hicethindusthan" target="_blank" rel="noopener noreferrer" class="social-link facebook">
+                            <div class="social-icon">f</div>
+                            <div class="social-info">
+                                <div class="social-name">Facebook</div>
+                                <div class="social-handle">hicethindusthan</div>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/school/hicet/" target="_blank" class="social-link linkedin">
                             <div class="social-icon">in</div>
                             <div class="social-info">
                                 <div class="social-name">LinkedIn</div>
-                                <div class="social-handle">HiMaC Group</div>
+                                <div class="social-handle">Hicet college</div>
                             </div>
                         </a>
-                        <a href="https://open.spotify.com" target="_blank" class="social-link spotify">
+                         
+                            <a href="https://www.linkedin.com/company/hindusthan-business-school-hicet-mba/" target="_blank" class="social-link linkedin">
+                                <div class="social-icon">in</div>
+                                <div class="social-info">
+                                    <div class="social-name">LinkedIn</div>
+                                    <div class="social-handle">Hicet Business School</div>
+                                </div>
+                            </a> 
+                        <a href="https://open.spotify.com/show/6rUxsHOVU1n8AtrlX902ZL?si=PuQ3nKwpQhGMOtwadkgPuw" target="_blank" class="social-link spotify">
                             <div class="social-icon spotify-icon">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.84-.179-.84-.66 0-.24.06-.48.24-.66 2.939-1.74 6.6-2.1 9.48-1.14.42.12.72.54.6.96zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"/>
@@ -271,193 +461,73 @@
         </div>
     </div>
 
+    <!-- Map Modal -->
+    <div class="modal" id="mapModal">
+        <div class="modal-content map-modal-content">
+            <span class="close-btn" id="closeMapModal">&times;</span>
+            <h2 class="modal-title">Location</h2>
+            <div class="modal-body">
+                <div class="map-section">
+                    <div class="address-info">
+                        <h3 class="contact-section-title">Address</h3>
+                        <div class="address-text">
+                            Department of Management Sciences<br>
+                            Hindusthan College of Engineering and Technology (HiCET)<br>
+                            Valley Campus, Pollachi Highway<br>
+                            Coimbatore - 641032, Tamil Nadu, India<br>
+                            (Hindusthan College)
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5!2d76.9!3d11.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb1%3A0x6fcde3c10e4f3c4e!2sHindusthan%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin&markers=color:red%7Clabel:H%7C11.0,76.9" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0; border-radius: 12px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="HiCET Valley Campus Location">
+                        </iframe>
+                    </div>
+                    <div class="map-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Hindusthan+College+of+Engineering+and+Technology+Valley+Campus+Pollachi+Highway+Coimbatore" 
+                           target="_blank" 
+                           class="map-link-btn">
+                            Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Sponsor Modal -->
     <div class="modal" id="sponsorModal">
         <div class="modal-content sponsor-modal-content">
             <span class="close-btn" id="closeSponsorModal">&times;</span>
             <div class="modal-body">
-                <div class="sponsor-header">
-                    <div class="sponsor-header-content">
-                        <div class="sponsor-logo-container">
-                            <img src="images/hicet-logo.jpg" alt="Hindusthan Educational and Charitable Trust Logo" class="sponsor-logo">
-                        </div>
-                        <div class="sponsor-header-text">
-                            <h2 class="sponsor-main-title">Hindusthan College of Engineering and Technology</h2>
-                    <p class="sponsor-subtitle">An Autonomous Institution, Approved by AICTE, New Delhi, Affiliated to Anna University, Chennai</p>
-                    <p class="sponsor-subtitle">Accredited by NBA (AERO, AGRI, AUTO, BME, CHE, CIVIL, CSE, ECE, EEE, FT, IT, MECH, MCTS, MBA, MCA)</p>
-                    <p class="sponsor-subtitle">Accredited by NAAC with 'A++' Grade with CGPA of 3.69 out of 4 in Cycle 2</p>
-                    <p class="sponsor-subtitle">Valley Campus, Coimbatore – 641 032, Tamil Nadu, INDIA</p>
-                    <p class="sponsor-subtitle"><strong>Department of Management Sciences (MBA)</strong></p>
-                    <h2 class="sponsor-main-title">Hindusthan Management Carnival – HiMaC 2026</h2>
-                    <p class="sponsor-subtitle"><strong>Date:</strong> 06 March 2026</p>
-                    <p class="sponsor-subtitle"><strong>Venue:</strong> HiCET Valley Campus, Pollachi Highway, Coimbatore – 641032, Tamil Nadu, India (Hindusthan College)</p>
-                        </div>
+                <div class="sponsor-modal-card">
+                    <div class="sponsor-modal-image">
+                        <img src="images/titlesponsor.jpg" alt="anuswa" class="sponsor-modal-img">
                     </div>
-                </div>
-
-                <div class="sponsor-section">
-                    <h2 class="sponsor-section-title">Partner with HiMaC 2026</h2>
-                    <p class="sponsor-tagline">Build visibility. Engage talent. Strengthen impact.</p>
-                    <p class="sponsor-subtitle"><strong>Rule Book & Sponsorship Package</strong></p>
-                </div>
-
-                <div class="sponsor-section">
-                    <h2 class="sponsor-section-title">Opportunity at a Glance</h2>
-                    <p class="sponsor-text">
-                        HiMaC 2026 is an intercollegiate management carnival that connects industry leaders with high-potential management, arts and engineering students through competitive events, innovation challenges, and live engagement.
-                    </p>
-                    <p class="sponsor-text">
-                        The partnership offers high-impact brand visibility, direct campus access, and meaningful industry–academia collaboration.
-                    </p>
-                </div>
-
-                <div class="sponsor-section">
-                    <h2 class="sponsor-section-title">Audience You Engage</h2>
-                    <ul class="sponsor-list">
-                        <li>UG & PG Students of Engineering, Management and Arts domain.</li>
-                        <li>Entrepreneurs.</li>
-                        <li>Faculty, researchers & academic leaders.</li>
-                    </ul>
-                </div>
-
-                <div class="sponsor-section">
-                    <h2 class="sponsor-section-title">Why HiMaC 2026 Works for Your Brand</h2>
-                    <ul class="sponsor-list">
-                        <li>🎯 Reach 5000+ students and faculty on campus</li>
-                        <li>🎓 Engage 350+ intercollegiate participants from management institutions</li>
-                        <li>📣 Multi-week digital promotion before, during, and after the event</li>
-                        <li>🤝 Direct interaction through on-campus stalls & live demos</li>
-                        <li>🌱 Ideal for brand building, hiring, lead generation, and CSR outreach</li>
-                    </ul>
-                </div>
-
-                <div class="sponsor-section">
-                    <h2 class="sponsor-section-title">1. About HiMaC 2026</h2>
-                    <p class="sponsor-text">
-                        Hindusthan Management Carnival (HiMaC) is an intercollegiate management fest designed to showcase managerial talent through competitions which include business quizzes, case studies, marketing challenges, startup pitches, management games, and cultural performances.
-                    </p>
-                    <p class="sponsor-text">
-                        This carnival also provides a unique platform for students across various colleges to engage, compete, network, and learn.
-                    </p>
-                    <h3 class="sponsor-subsection-title">Target Participation for Sponsors:</h3>
-                    <ul class="sponsor-list">
-                        <li>5000+ students and staff from HiCET (Hindusthan College)</li>
-                        <li>350+ expected intercollege participants</li>
-                    </ul>
-                </div>
-
-                <div class="sponsor-section">
-                    <h2 class="sponsor-section-title">2. Sponsorship Rules & Guidelines</h2>
-                    <h3 class="sponsor-subsection-title">2.1 Eligibility</h3>
-                    <p class="sponsor-text">
-                        Sponsorship is open to all legally registered companies and organizations. Sponsors must comply with Indian legal and ethical standards and must not promote illegal, discriminatory, or harmful products/services.
-                    </p>
-                    <h3 class="sponsor-subsection-title">2.2 Sponsorship Allocation</h3>
-                    <p class="sponsor-text">
-                        Space for stalls is allocated on a first-confirmed basis acknowledged with the receipt of payment and completed agreement.
-                    </p>
-                    <h3 class="sponsor-subsection-title">2.3 Stall/Display Regulations</h3>
-                    <ul class="sponsor-list">
-                        <li>Stalls must conform to safety standards and not obstruct emergency exits or public footpaths.</li>
-                        <li>Setting up of stalls is permitted on 05 March and 06 March (Morning) prior to the start time.</li>
-                        <li>No hazardous or inflammable material is permitted.</li>
-                    </ul>
-                    <h3 class="sponsor-subsection-title">2.4 Digital and Offline Promotions</h3>
-                    <p class="sponsor-text">All sponsors will be promoted through:</p>
-                    <ul class="sponsor-list">
-                        <li>Official social media pages and digital banners (Instagram, Facebook, LinkedIn)</li>
-                        <li>Event posters and flyers.</li>
-                        <li>Promotion schedules will be communicated at least 10 days prior to the event</li>
-                    </ul>
-                </div>
-
-                <div class="sponsor-section">
-                    <h2 class="sponsor-section-title">3. Sponsorship Categories & Benefits</h2>
-                    <div class="sponsor-table-container">
-                        <table class="sponsor-table">
-                            <thead>
-                                <tr>
-                                    <th>Tier</th>
-                                    <th>Amount (₹)</th>
-                                    <th>Primary Benefits</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Title Sponsor</strong></td>
-                                    <td>50,000</td>
-                                    <td>Digital Campaign + Premium Stall (30*30 Feet) + Main Stage Logo + Promotion slot + Speaking Slot OR Jury Seat + Certificate + Brand announcements during inaugural, valedictory, and flagship events</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Gold Sponsor</strong></td>
-                                    <td>20,000</td>
-                                    <td>Logo on digital posters + Stall (20*20 feet) + Social media reels + Speaking Slot OR Jury Seat</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Associate Sponsor</strong></td>
-                                    <td>10,000</td>
-                                    <td>Logo featured on fest collateral + Social media posts + (10*10 feet - 1 table and 2 chairs) in prime location.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Supporter Sponsor</strong></td>
-                                    <td>5,000</td>
-                                    <td>Logo on event posters / banners + Stall (5*5 feet - 1 table and 2 chair)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <p class="sponsor-note">Stall dimensions and placements may be mutually agreed based on space.</p>
-                </div>
-
-                <div class="sponsor-section">
-                    <h2 class="sponsor-section-title">4. Promotion & Media Commitments</h2>
-                    <h3 class="sponsor-subsection-title">4.1 Before the Event</h3>
-                    <ul class="sponsor-list">
-                        <li>Social Media Campaign with sponsor tags.</li>
-                        <li>Email Newsletter: Recognition in mailers to HiCET community of 6000+ students & staff (Hindusthan College)</li>
-                    </ul>
-                    <h3 class="sponsor-subsection-title">4.2 During the Event</h3>
-                    <ul class="sponsor-list">
-                        <li>Display on fest screens and banners.</li>
-                        <li>Public announcements of sponsors during key events.</li>
-                        <li>Stage presence for Title & Presenting Sponsors.</li>
-                    </ul>
-                </div>
-
-                <div class="sponsor-section">
-                    <h2 class="sponsor-section-title">5. Payment Terms</h2>
-                    <ol class="sponsor-numbered-list">
-                        <li>50% advance payment required on booking confirmation.</li>
-                        <li>Balance payment due by 15 February 2026.</li>
-                        <li>Payments are to be remitted through bank transfers or demand draft to the Event Organising Committee – HiMaC 2026.</li>
-                    </ol>
-                    <p class="sponsor-text">Bank details and Sponsor Agreement will be shared upon initial confirmation.</p>
-                </div>
-
-                <div class="sponsor-section">
-                    <h2 class="sponsor-section-title">6. Code of Conduct for Sponsors</h2>
-                    <ul class="sponsor-list">
-                        <li>Representatives must wear valid ID badges during the event.</li>
-                        <li>Respect college property; damages if any will be billed post-event.</li>
-                        <li>Strictly follow safety regulations.</li>
-                        <li>No solicitation beyond the allocated stall area.</li>
-                        <li>Compliance with all rules listed in this document is mandatory.</li>
-                    </ul>
-                </div>
-
-                <div class="sponsor-section">
-                    <h2 class="sponsor-section-title">7. Contact & Confirmation</h2>
-                    <div class="sponsor-contact-info">
-                        <p class="sponsor-text"><strong>Dr V Kanimozhi</strong> - Associate Professor / MBA</p>
-                        <p class="sponsor-text">Phone: <a href="tel:9894793391" class="sponsor-link">9894793391</a> | Email: <a href="mailto:kanimozhi.mba@hicet.ac.in" class="sponsor-link">kanimozhi.mba@hicet.ac.in</a></p>
-                        <p class="sponsor-text"><strong>Dr V Kaarthiekheyan</strong> - Professor & Head / MBA</p>
-                        <p class="sponsor-text">Phone: <a href="tel:9443016550" class="sponsor-link">9443016550</a> | Email: <a href="mailto:mbahod@hicet.ac.in" class="sponsor-link">mbahod@hicet.ac.in</a></p>
-                        <p class="sponsor-text"><strong>HiMaC 2026 Organising Committee</strong></p>
-                        <p class="sponsor-text">Email: <a href="mailto:himac2026@hicet.ac.in" class="sponsor-link">himac2026@hicet.ac.in</a></p>
-                        <p class="sponsor-text">Department of Management Sciences<br>
-                        Hindusthan College of Engineering and Technology (HiCET)<br>
-                        Valley Campus, Pollachi Highway, Coimbatore – 641032, Tamil Nadu, India (Hindusthan College)</p>
-                        <p class="sponsor-deadline"><strong>Sponsorship Confirmation Deadline: 15 February 2026</strong></p>
+                    <div class="sponsor-modal-info">
+                        <h2 class="sponsor-modal-title">Anuswaryaa Enterprises Private Limited</h2>
+                        <div class="sponsor-modal-description">
+                            <p>Jignature Foods Private Limited — a trusted beverage brand.</p>
+                            <p>Reviving the classic Jigarthanda with a modern touch.</p>
+                            <p>Delivering signature Jigarthanda, crafted fresh with natural ingredients.</p>
+                            <p>Trusted by millions, with 120+ outlets across India and global markets.</p>
+                            <p>A brand built on authenticity, quality, and innovation.</p>
+                        </div>
+                        <div class="sponsor-modal-links">
+                            <a href="https://www.anushindia.com/" target="_blank" rel="noopener noreferrer" class="sponsor-modal-link website-link">
+                                <strong>Visit Website</strong>
+                            </a>
+                            <a href="https://www.instagram.com/anush.india/" target="_blank" rel="noopener noreferrer" class="sponsor-modal-link instagram-link">
+                                <strong>Follow on Instagram</strong>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
