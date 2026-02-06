@@ -55,7 +55,7 @@ body {
 }
 
 .himac26-logo {
-    width: 140px;
+    width: 200px;
     height: auto;
     object-fit: contain;
     display: block;
@@ -143,7 +143,7 @@ body {
 }
 
 .himac-logo {
-    width: 120px;
+    width: 170px;
     height: auto;
     object-fit:cover;
 }
@@ -511,7 +511,7 @@ body {
     display: inline-block;
     white-space: nowrap;
     animation: marquee-scroll 18s linear infinite;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 1000;
     color: #dd950e;
     padding-left: 100%;
@@ -543,7 +543,7 @@ body {
     }
 
     .himac-logo {
-        width: 100px;
+        width: 130px;
     }
 
     .logo-text {
@@ -587,7 +587,15 @@ body {
     .header-marquee-text {
         max-width: 100px;
         height: auto;
+        font-size: 10px;
     }
+
+/* Ensure the clickable marquee anchor fills the card and doesn't inherit link styles */
+.title-sponsor-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
 
     .title-sponsor-name {
         font-size: 16px;
@@ -1216,6 +1224,12 @@ body {
     margin-bottom: 20px;
 }
 
+/* Justify About modal paragraphs for improved readability */
+.about-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .vision-mission-section {
     margin: 30px 0;
     display: flex;
@@ -1277,6 +1291,329 @@ body {
 /* Contact Modal Styles */
 .contact-section {
     margin-bottom: 30px;
+}
+
+/* Instagram / Contact modal - combined event card for two accounts */
+.instagram-event-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+}
+.instagram-accounts {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+.insta-account {
+    flex: 0 0 auto;
+    background: linear-gradient(180deg,#ffffff,#fbfbfb);
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+}
+.insta-meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.insta-icon {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+.insta-title {
+    font-weight: 700;
+    color: #333;
+}
+.insta-handle {
+    font-weight: 600;
+    color: #e1306c;
+}
+.insta-desc {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.follow-btn {
+    display: inline-block;
+    background: linear-gradient(45deg,#e1306c,#c13584);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    width: fit-content;
+}
+
+/* Facebook / Contact modal - combined event card for two accounts */
+.facebook-event-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+}
+.facebook-accounts {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+.facebook-account {
+    flex: 0 0 auto;
+    background: linear-gradient(180deg,#ffffff,#fbfbfb);
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.facebook-meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.facebook-icon {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+.facebook-title {
+    font-weight: 700;
+    color: #333;
+}
+.facebook-handle {
+    font-weight: 600;
+    color: #1877f2;
+}
+.facebook-desc {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.facebook-btn {
+    display: inline-block;
+    background: #1877f2;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.spotify-event-card-wrapper {
+    margin-bottom: 12px;
+}
+
+/* Spotify Event Card Styling */
+.spotify-event-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.spotify-accounts {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.spotify-account {
+    flex: 0 0 auto;
+   background: linear-gradient(180deg,#ffffff,#fbfbfb);
+    border-radius: 8px;
+    padding: 12px;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.spotify-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.spotify-title {
+    font-weight: 700;
+    color: #333;
+    font-size: 14px;
+}
+
+.spotify-handle {
+    font-size: 12px;
+    color: #1DB954;
+    font-weight: 600;
+}
+.spotify-icon {
+        width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.spotify-desc {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+    margin: 8px 0;
+}
+
+.spotify-btn {
+  display: inline-block;
+    background: #1DB954;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    width: fit-content;
+}
+
+
+/* LinkedIn Event Card Styling */
+.linkedin-event-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.linkedin-accounts {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.linkedin-account {
+    flex: 0 0 auto;
+    background: linear-gradient(180deg,#ffffff,#fbfbfb);
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.linkedin-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.linkedin-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.linkedin-title {
+       font-weight: 700;
+    color: #333;
+}
+
+.linkedin-handle {
+   font-weight: 600;
+   color:  #1877f2;
+}
+
+.linkedin-desc {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.linkedin-btn {
+   display: inline-block;
+    background: #1877f2;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    width: fit-content;
+}
+
+@media (max-width: 600px) {
+    .instagram-accounts,
+    .facebook-accounts,
+    .linkedin-accounts,
+    .spotify-accounts,
+    .website-accounts {
+        flex-direction: column;
+    }
+}
+
+/* Website Event Card Styling */
+.website-event-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.website-accounts {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.website-account {
+    flex: 0 0 auto;
+    background: linear-gradient(180deg,#ffffff,#fbfbfb);
+    border-radius: 8px;
+    padding: 12px;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    }
+
+.website-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.website-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+}
+
+.website-title {
+    font-weight: 700;
+     color: #555;
+}
+
+.website-handle {
+    font-size: 12px;
+    color: #0b5ea8;
+    font-weight: 600;
+}
+
+.website-desc {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+    margin: 8px 0;
+}
+
+.website-btn {
+    background:#0b5ea8;
+    color:  #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-weight: 600;
+    width: fit-content;
 }
 
 .contact-section-title {
@@ -1715,7 +2052,7 @@ body {
     }
 
     .himac26-logo {
-        width: 85px;
+        width: 140px;
         margin-top: 4px;
     }
 
@@ -1725,7 +2062,7 @@ body {
     }
 
     .himac-logo {
-        width: 80px;
+        width: 130px;
         height: auto;
     }
 
@@ -2204,6 +2541,4 @@ body {
         font-size: 14px;
     }
 }
-
-
 
