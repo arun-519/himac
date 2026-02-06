@@ -61,9 +61,9 @@ setInterval(updateCountdown, 1000);
 
 // Event data
 const eventData = {
-    'bi-battle': {   
+    'bi-battle ': {   
         category: 'Technical Events',
-        title: 'BI BATTLE',
+        title: 'BI BATTLE (Data Visualization)',
         description: 'Business Intelligence Competition - Showcase your data analytics and business intelligence skills through competitive challenges and case studies.',
         color: 'blue',
         registrationUrl:'https://forms.gle/p8GhQYeqK3MGYG36A'
@@ -82,9 +82,16 @@ const eventData = {
         color: 'purple',
         registrationUrl:'https://forms.gle/Yi1RJXCMuxmEqWpQ6'
     },
+    'Project-expo': {
+        category: 'Non-Technical Events',
+        title: 'Project Expo',
+        description: 'Entrepreneurship Development Showcase - Present innovative startup ideas and entrepreneurial projects to investors and mentors.',
+        color: 'orange', 
+        registrationUrl:'https://forms.gle/uRL8KnMfFmAJmtpX9'
+    },
     'talent-show': {
         category: 'Non-Technical Events',
-        title: '1 Minute Talent Show',
+        title: 'Talent Show',
         description: 'Quick Talent Showcase - Showcase your unique talents in just one minute. A fast-paced competition where creativity meets brevity.',
         color: 'orange',
         registrationUrl:'https://forms.gle/FUSo46xjWJQsi4UH7'
@@ -96,9 +103,9 @@ const eventData = {
         color: 'purple',
         registrationUrl:'https://forms.gle/LufUuK9RzNRcBKzQ7'
     },
-    'ipl-auction': {
+    'Hpl-auction': {
         category: 'Non-Technical Events',
-        title: 'IPL Auction',
+        title: 'HPL Auction',
         description: 'Cricket Team Auction Simulation - Experience the thrill of an IPL-style auction. Build your dream team and compete in this exciting event.',
         color: 'green',
         registrationUrl:'https://forms.gle/khL6FC18kpvS52or7'
@@ -110,29 +117,22 @@ const eventData = {
         color: 'pink',
         registrationUrl:'https://forms.gle/dYGUhsu858EH7UV3A'
     },
-    'Project-expo': {
-        category: 'Non-Technical Events',
-        title: 'Project Expo',
-        description: 'Entrepreneurship Development Showcase - Present innovative startup ideas and entrepreneurial projects to investors and mentors.',
-        color: 'orange', 
-        registrationUrl:'https://forms.gle/uRL8KnMfFmAJmtpX9'
-    },
     'brand-to-boardroom': {
         category: 'Technical Events',
-        title: 'Brand to Boardroom',
+        title: 'Brand to Boardroom (Quiz & Digitalise it)',
         description: 'Brand Management & Corporate Strategy Competition - Transform your brand vision into boardroom success through strategic planning and brand positioning challenges.',
         color: 'blue',
         registrationUrl:'https://forms.gle/MqcnoBEDNsKHrjFNA'
     },
     'strategix': {
         category: 'Technical Events',
-        title: 'STRATEGIX',
+        title: 'STRATEGIX (Business Simulation)',
         description: 'Strategic Management Competition - Test your strategic thinking and decision-making skills in complex business scenarios and competitive strategy challenges.',
         color: 'purple'
     },
     'vibrant-ventures': {
         category: 'Non-Technical Events',
-        title: 'Vibrant Ventures',
+        title: 'Vibrant Ventures (Idea / Business Plan Pitching)',
         description: 'Entrepreneurship & Innovation Showcase - Present your innovative startup ideas, business models, and entrepreneurial ventures to a panel of judges and potential investors.',
         color: 'cyan',
         registrationUrl:'https://docs.google.com/forms/d/e/1FAIpQLSeJHrZwZzBSlk6gsHFLtUdmabJ1KVLmrQXaX0K9FLkPAk5_1w/viewform?usp=header'
@@ -151,107 +151,123 @@ const eventGuidance = {
     'bi-battle': {
         title: 'BI Battle – Guidelines',
         points: [
-            'Participants must bring their own laptop with internet access.',
-            'A common dataset will be provided and must be used strictly for all rounds.',
-            'Use of external datasets, AI tools, or external assistance is strictly prohibited.',
-            'Plagiarism, copying, or sharing of work will lead to immediate disqualification.',
-            'Judges\' decisions will be final and binding.',
-            'Winners and runners-up will be selected based on overall performance across all rounds.'
+            'Teams must use the provided dataset only.',
+            'Visualizations must be original and clearly labeled.',
+            'Any form of plagiarism or malpractice will lead to disqualification.',
+            'Submissions must be made within the given time limit.',
+            'Judges’ decisions will be final and binding.'
         ]
     },
     'stock-war': {
         title: 'Stock War – Guidelines',
         points: [
-            'Teams must report at least 15 minutes before the event start time.',
-            'Use of personal mobile phones during rounds is strictly prohibited.',
-            'Any form of malpractice or unfair means will lead to immediate disqualification.',
-            'The decisions of judges and event coordinators will be final and binding.'
+            'Trading allowed only during event hours.',
+            'All trades must be done on the given platform.',
+            'No unfair practices; violations lead to disqualification.',
+            'Smart Phones & Laptops are allowed.',
+            'Judges’ and coordinators’ decisions are final.'
         ]
     },
     'mime': {
         title: 'Mime – Guidelines',
         points: [
-            'Teams must report at least 15 minutes before the event start time.',
-            'Use of personal mobile phones during any round is strictly prohibited, unless explicitly permitted by the coordinators.',
-            'Points will be awarded for correct answers, and negative marking may be applied for incorrect answers at the discretion of the coordinators.',
-            'Final winners will be decided based on total points scored across all rounds and response time, if required.'
+            'Time limit: 5-7 mins/ team',
+            'The use of physical props is strictly prohibited.',
+            'Instrumental background music is highly recommended.',
+            'The act must not contain any vulgarity, obscenity, or offensive gestures.',
+            'Creativity and expression will be judged.',
+            'Judges’ decision will be final and binding.'
         ]
     },
     'best-manager': {
         title: 'Best Manager – Guidelines',
         points: [
-            'This is an individual event.',
-            'Participants must report on time for all rounds.',
-            'Each round is eliminatory, and decisions of the judges will be final.',
-            'Use of unfair means or misconduct will lead to immediate disqualification.',
-            'The organizing committee reserves the right to modify the rules or schedule if required.'
+            'Individual participation only.',
+            'Formal attire recommended.',
+            'Digital devices are restricted.',
+            'All rounds are elimination-based.',
+            'Expect crisis challenges, simulations, escape/problem-solving tasks.'
         ]
     },
     'brand-to-boardroom': {
         title: 'Brand to Boardroom – Guidelines',
         points: [
-            'Teams must report at least 15 minutes before the event start time.',
-            'Use of personal mobile phones during any round is strictly prohibited, unless explicitly permitted by the coordinators.',
-            'Points will be awarded for correct answers, and negative marking may be applied for incorrect answers at the discretion of the coordinators.',
-            'Final winners will be decided based on total points scored across all rounds and response time, if required.'
+            'Teams must report on time.',
+            'Use of electronic devices is not allowed.',
+            'No discussion or external help during the quiz.',
+            'Any malpractice will lead to disqualification.',
+            'Quizmaster’s decision will be final.'
         ]
     },
     'strategix': {
         title: 'Strategix – Guidelines',
         points: [
-            'Participants must report on time for all rounds.',
-            'Team must use PESTLE or SWOT Analysis.',
-            'Each round is eliminatory, and decisions of the judges will be final.',
-            'Use of unfair means or misconduct will lead to immediate disqualification.',
-            'The organizing committee reserves the right to modify the rules or schedule if required.'
+            'Use the provided platform only.',
+            'Submit decisions on time.',
+            'No unfair practices.',
+            'Results determine winners.',
+            'Judges’ decisions are final.'
         ]
     },
     'vibrant-ventures': {
         title: 'Vibrant Ventures – Guidelines',
         points: [
-            'Teams must report at least 15 minutes before the event start time.',
-            'Use of personal mobile phones during any round is strictly prohibited, unless explicitly permitted by the coordinators.',
-            'Points will be awarded for correct answers, and negative marking may be applied for incorrect answers at the discretion of the coordinators.',
-            'Final winners will be decided based on total points scored across all rounds and response time, if required.'
+            'Teams must present original startup ideas.',
+            'Time limits must be strictly followed.',
+            'Plagiarism or unfair practices lead to disqualification.',
+            'Evaluation is based on innovation and feasibility.',
+            'Judges’ decisions are final.'
         ]
     },
     'face-painting': {
         title: 'Face Painting – Guidelines',
         points: [
-            'Participants must report on time for all rounds.',
-            'Team must use PESTLE or SWOT Analysis.',
-            'Each round is eliminatory, and decisions of the judges will be final.',
-            'Use of unfair means or misconduct will lead to immediate disqualification.',
-            'The organizing committee reserves the right to modify the rules or schedule if required.'
+            'theme will be given 4th March 2026.',
+            'time limit: 3 hours.',
+            'Teams must use safe, non-toxic colors.',
+            'Creativity and neatness will be judged.',
+            'No copying others’ designs.',
+            'Time limits must be followed.',
+            'Judges’ decisions are final.'
         ]
     },
     'talent-show': {
         title: 'Talent Show – Guidelines',
         points: [
-            'Participants must report on time for all rounds.',
-            'Team must use PESTLE or SWOT Analysis.',
-            'Each round is eliminatory, and decisions of the judges will be final.',
-            'Use of unfair means or misconduct will lead to immediate disqualification.',
-            'The organizing committee reserves the right to modify the rules or schedule if required.'
+            'Performances must be original.',
+            'Time limits must be followed (Maximum:5 minutes).',
+            'No offensive content allowed.',
+            'Use of props or equipment must be pre-approved.',
+            'Judges’ decisions are final.'
         ]
     },
-    'ipl-auction': {
-        title: 'IPL Auction – Guidelines',
+    'Hpl-auction': {
+        title: 'HPL Auction – Guidelines',
         points: [
-            'Teams must report at least 15 minutes before the event start time.',
-            'Use of personal mobile phones during any round is strictly prohibited, unless explicitly permitted by the coordinators.',
-            'Points will be awarded for correct answers, and negative marking may be applied for incorrect answers at the discretion of the coordinators.',
-            'Final winners will be decided based on total points scored across all rounds and response time, if required.'
+            'Each team has a fixed budget to buy players.',
+            'Bidding is open only during the auction session.',
+            'Highest bid wins the player.',
+            'No unfair practices or collusion allowed.',
+            'Decisions by the auctioneer are final.'
         ]
     },
     'Project-expo': {
         title: 'Project Expo – Guidelines',
         points: [
-            'Participants must report on time for all rounds.',
-            'Team must present the Prototype or Project.',
-            'Each round is eliminatory, and decisions of the judges will be final.',
-            'Use of unfair means or misconduct will lead to immediate disqualification.',
-            'The organizing committee reserves the right to modify the rules or schedule if required.'
+            'Projects must be original and prepared by the team.',
+            'All equipment and materials should be ready beforehand.',
+            'Judges will evaluate creativity, clarity, and functionality.',
+            'Judges’ decisions are final.'
+        ]
+    },
+    'treasure-hunt': {
+        title: 'Treasure Hunt – Guidelines',
+        points: [
+            'Teams must follow the given clues in order.',
+            'No external help or shortcuts allowed.',
+            'Time limits must be strictly followed.',
+            'Any unfair means will lead to disqualification.',
+            'Judges’ decisions are final.'
         ]
     }
 };
@@ -279,6 +295,7 @@ const eventsLink = document.getElementById('eventsLink');
 const contactsLink = document.getElementById('contactsLink');
 const sponsorLink = document.getElementById('sponsorLink');
 const mapLink = document.querySelector('a[href="#map"]');
+const instagramLink = document.getElementById('instagramLink');
 
 // Group events by category
 function groupEventsByCategory() {
@@ -554,6 +571,18 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         openContactModal();
     });
+
+    // Instagram link - open contact modal and scroll to Instagram section
+    if (instagramLink) {
+        instagramLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            openContactModal();
+            setTimeout(function() {
+                const section = document.getElementById('instagramSection');
+                if (section) section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 120);
+        });
+    }
 
     // Sponsor link
     sponsorLink.addEventListener('click', function(e) {
