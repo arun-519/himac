@@ -1,3 +1,64 @@
+// Guidelines Modal Functionality
+const guidelinesModal = document.getElementById('guidelinesModal');
+const guidelinesLink = document.getElementById('guidelinesLink');
+const guidelinesClose = document.getElementById('guidelinesClose');
+
+if (guidelinesLink) {
+    guidelinesLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (guidelinesModal) {
+            guidelinesModal.style.display = 'block';
+        }
+    });
+}
+
+if (guidelinesClose) {
+    guidelinesClose.addEventListener('click', () => {
+        if (guidelinesModal) {
+            guidelinesModal.style.display = 'none';
+        }
+    });
+}
+
+if (guidelinesModal) {
+    window.addEventListener('click', (e) => {
+        if (e.target === guidelinesModal) {
+            guidelinesModal.style.display = 'none';
+        }
+    });
+}
+
+// Countdown Timer Functionality
+function updateCountdown() {
+    const eventDate = new Date('2026-03-06').getTime();
+    const now = new Date().getTime();
+    const distance = eventDate - now;
+
+    if (distance < 0) {
+        document.getElementById('countdownDays').textContent = '00';
+        document.getElementById('countdownHours').textContent = '00';
+        document.getElementById('countdownMinutes').textContent = '00';
+        document.getElementById('countdownSeconds').textContent = '00';
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById('countdownDays').textContent = String(days).padStart(2, '0');
+    document.getElementById('countdownHours').textContent = String(hours).padStart(2, '0');
+    document.getElementById('countdownMinutes').textContent = String(minutes).padStart(2, '0');
+    document.getElementById('countdownSeconds').textContent = String(seconds).padStart(2, '0');
+}
+
+// Initialize countdown
+updateCountdown();
+
+// Update countdown every second
+setInterval(updateCountdown, 1000);
+
 // Event data
 const eventData = {
     'bi-battle': {   
@@ -5,63 +66,63 @@ const eventData = {
         title: 'BI BATTLE',
         description: 'Business Intelligence Competition - Showcase your data analytics and business intelligence skills through competitive challenges and case studies.',
         color: 'blue',
-        registrationUrl:'https://docs.google.com/forms/d/e/1FAIpQLSepQTMnlqX_1XOX1OieH-HglOF5J62HnMSk56gRs9cb5CUVkg/viewform?usp=publish-editor'
+        registrationUrl:'https://forms.gle/p8GhQYeqK3MGYG36A'
     },
     'stock-war': {
         category: 'Technical Events',
         title: 'STOCK WAR',
         description: 'Stock Market Trading Competition - Test your financial acumen and trading strategies in an exciting simulated stock market environment.',
         color: 'green',
-        registrationUrl:'https://docs.google.com/forms/d/e/1FAIpQLSfrRMP1ll_EYkbB42ZoLISOcTboCGU2TPMQOw3o-1ee7idfug/viewform?usp=header'
+        registrationUrl:'https://forms.gle/4ZBAX1qXxTeVm4p87'
     },
     'best-manager': {
         category: 'Technical Events',
         title: 'BEST MANAGER',
         description: 'Leadership & Management Competition - Demonstrate exceptional leadership and management skills through strategic business scenarios and team challenges.',
         color: 'purple',
-        registrationUrl:'https://docs.google.com/forms/d/e/1FAIpQLScXk6sSQnG6T0pM3-wAV31DjcfGjKsl79ENQ4X5P3ccJOOHDg/viewform?usp=publish-editor'
+        registrationUrl:'https://forms.gle/Yi1RJXCMuxmEqWpQ6'
     },
     'talent-show': {
         category: 'Non-Technical Events',
         title: '1 Minute Talent Show',
         description: 'Quick Talent Showcase - Showcase your unique talents in just one minute. A fast-paced competition where creativity meets brevity.',
         color: 'orange',
-        registrationUrl:'https://docs.google.com/forms/d/e/1FAIpQLSdzvgoKhLywGfWg1aRoNZdPbgqJiu6cZe7tkTokvY5hChNbHA/viewform?usp=publish-editor'
+        registrationUrl:'https://forms.gle/FUSo46xjWJQsi4UH7'
     },
     'mime': {
         category: 'Non-Technical Events',
         title: 'Mime',
         description: 'Silent Performance Art - Express stories and emotions through the art of mime. A competition celebrating non-verbal communication and artistic expression.',
         color: 'purple',
-        registrationUrl:'https://docs.google.com/forms/d/e/1FAIpQLSf_aBq-vlQux2d5S-mcQwQUwVc3PERwWfWcmR3s3COKlXxGBg/viewform?usp=publish-editor'
+        registrationUrl:'https://forms.gle/LufUuK9RzNRcBKzQ7'
     },
     'ipl-auction': {
         category: 'Non-Technical Events',
         title: 'IPL Auction',
         description: 'Cricket Team Auction Simulation - Experience the thrill of an IPL-style auction. Build your dream team and compete in this exciting event.',
         color: 'green',
-        registrationUrl:'https://docs.google.com/forms/d/e/1FAIpQLSeoEIumrCbL5hNRwBMW7I6HUqQdk9VNud_2dBz9VIK8ayipVg/viewform?usp=publish-editor'
+        registrationUrl:'https://forms.gle/khL6FC18kpvS52or7'
     },
     'face-painting': {
         category: 'Non-Technical Events',
         title: 'Face Painting',
         description: 'Creative Art Competition - Transform faces into stunning canvases of art through vibrant, themed face painting designs.',
         color: 'pink',
-        registrationUrl:'https://docs.google.com/forms/d/e/1FAIpQLScoo1M8z6N-WEgJoB83Av2OcN_gHZ7uQvAzvg-q74z8_7mU8A/viewform?usp=publish-editor'
+        registrationUrl:'https://forms.gle/dYGUhsu858EH7UV3A'
     },
     'Project-expo': {
         category: 'Non-Technical Events',
         title: 'Project Expo',
         description: 'Entrepreneurship Development Showcase - Present innovative startup ideas and entrepreneurial projects to investors and mentors.',
         color: 'orange', 
-        registrationUrl:'https://docs.google.com/forms/d/e/1FAIpQLSfGXBqNChVpY0q1xj7W8MQdNXMjBXW_c9xm37_-rv7eaQYcwg/viewform?usp=publish-editor'
+        registrationUrl:'https://forms.gle/uRL8KnMfFmAJmtpX9'
     },
     'brand-to-boardroom': {
         category: 'Technical Events',
         title: 'Brand to Boardroom',
         description: 'Brand Management & Corporate Strategy Competition - Transform your brand vision into boardroom success through strategic planning and brand positioning challenges.',
         color: 'blue',
-        registrationUrl:'https://docs.google.com/forms/d/e/1FAIpQLSf9h-EHP9eDwGp-QKpgBnwG7sBc0W0SrN0HOLBNUrBjPo0HQQ/viewform?usp=header'
+        registrationUrl:'https://forms.gle/MqcnoBEDNsKHrjFNA'
     },
     'strategix': {
         category: 'Technical Events',
@@ -81,7 +142,7 @@ const eventData = {
         title: 'Treasure Hunt',
         description: 'A thrilling adventure where participants solve clues and puzzles to find hidden treasures.',
         color: 'gold',
-        registrationUrl:'https://docs.google.com/forms/d/e/1FAIpQLSfj77kyCtZmvPTrOU-KkentRnfSMsJOhirj6cD0TzEUOIbieQ/viewform?usp=publish-editor'
+        registrationUrl:'https://forms.gle/MihxTH8CP3HuD7Yh9'
     }
 };
 
