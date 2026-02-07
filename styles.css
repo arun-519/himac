@@ -585,9 +585,8 @@ body {
     }
 
     .header-marquee-text {
-        max-width: 100px;
-        height: auto;
-        font-size: 10px;
+       justify-content: flex-start;
+       gap: 8px;
     }
 
 /* Ensure the clickable marquee anchor fills the card and doesn't inherit link styles */
