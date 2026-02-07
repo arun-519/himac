@@ -59,91 +59,151 @@ updateCountdown();
 // Update countdown every second
 setInterval(updateCountdown, 1000);
 
-// Event data
+// Event data (each event now has three organiser contacts)
 const eventData = {
-    'bi-battle': {   
+    'bi-battle': {
         category: 'Technical Events',
         title: 'BI BATTLE (Data Visualization)',
         description: 'Business Intelligence Competition - Showcase your data analytics and business intelligence skills through competitive challenges and case studies.',
         color: 'blue',
-        registrationUrl:'https://forms.gle/p8GhQYeqK3MGYG36A'
+        registrationUrl: 'https://forms.gle/p8GhQYeqK3MGYG36A',
+        organizerContacts: [
+            { name: 'Prof. R. Kumar', phone: '+91-9876543210' },
+            { name: 'Ms. A. George', phone: '+91-9123400001' },
+            { name: 'Mr. L. Thomas', phone: '+91-9001100223' }
+        ]
     },
     'stock-war': {
         category: 'Technical Events',
         title: 'STOCK WAR',
         description: 'Stock Market Trading Competition - Test your financial acumen and trading strategies in an exciting simulated stock market environment.',
         color: 'green',
-        registrationUrl:'https://forms.gle/4ZBAX1qXxTeVm4p87'
+        registrationUrl: 'https://forms.gle/4ZBAX1qXxTeVm4p87',
+        organizerContacts: [
+            { name: 'Ms. S. Mehta', phone: '+91-9123456780' },
+            { name: 'Mr. P. Narayan', phone: '+91-9123456791' },
+            { name: 'Ms. R. Anitha', phone: '+91-9123456792' }
+        ]
     },
     'best-manager': {
         category: 'Technical Events',
         title: 'BEST MANAGER',
         description: 'Leadership & Management Competition - Demonstrate exceptional leadership and management skills through strategic business scenarios and team challenges.',
         color: 'purple',
-        registrationUrl:'https://forms.gle/Yi1RJXCMuxmEqWpQ6'
+        registrationUrl: 'https://forms.gle/Yi1RJXCMuxmEqWpQ6',
+        organizerContacts: [
+            { name: 'Dr. A. Nair', phone: '+91-9001122334' },
+            { name: 'Ms. V. Meenakshi', phone: '+91-9001122335' },
+            { name: 'Mr. D. Karthik', phone: '+91-9001122336' }
+        ]
     },
     'Project-expo': {
         category: 'Non-Technical Events',
         title: 'Project Expo',
         description: 'Entrepreneurship Development Showcase - Display your Prototype and entrepreneurial projects to investors and mentors.',
-        color: 'orange', 
-        registrationUrl:'https://forms.gle/uRL8KnMfFmAJmtpX9'
+        color: 'orange',
+        registrationUrl: 'https://forms.gle/uRL8KnMfFmAJmtpX9',
+        organizerContacts: [
+            { name: 'Mr. V. Raj', phone: '+91-9988776655' },
+            { name: 'Ms. H. Rekha', phone: '+91-9988776656' },
+            { name: 'Mr. S. Arjun', phone: '+91-9988776657' }
+        ]
     },
     'talent-show': {
         category: 'Non-Technical Events',
         title: 'Talent Show',
         description: 'Quick Talent Showcase - Showcase your unique talents in just one minute. A fast-paced competition where creativity meets brevity.',
         color: 'orange',
-        registrationUrl:'https://forms.gle/FUSo46xjWJQsi4UH7'
+        registrationUrl: 'https://forms.gle/FUSo46xjWJQsi4UH7',
+        organizerContacts: [
+            { name: 'Ms. N. Priya', phone: '+91-9345678120' },
+            { name: 'Mr. A. Kannan', phone: '+91-9345678121' },
+            { name: 'Ms. S. Divya', phone: '+91-9345678122' }
+        ]
     },
     'mime': {
         category: 'Non-Technical Events',
         title: 'Mime',
         description: 'Silent Performance Art - Express stories and emotions through the art of mime. A competition celebrating non-verbal communication and artistic expression.',
         color: 'purple',
-        registrationUrl:'https://forms.gle/LufUuK9RzNRcBKzQ7'
+        registrationUrl: 'https://forms.gle/LufUuK9RzNRcBKzQ7',
+        organizerContacts: [
+            { name: 'Mr. K. Suresh', phone: '+91-9870011223' },
+            { name: 'Ms. P. Latha', phone: '+91-9870011224' },
+            { name: 'Mr. R. Vinod', phone: '+91-9870011225' }
+        ]
     },
     'Hpl-auction': {
         category: 'Non-Technical Events',
         title: 'HPL Auction',
         description: 'Cricket Team Auction Simulation - Experience the thrill of an IPL-style auction. Build your dream team and compete in this exciting event.',
         color: 'green',
-        registrationUrl:'https://forms.gle/khL6FC18kpvS52or7'
+        registrationUrl: 'https://forms.gle/khL6FC18kpvS52or7',
+        organizerContacts: [
+            { name: 'Mr. R. Balaji', phone: '+91-9445566778' },
+            { name: 'Mr. S. Rohit', phone: '+91-9445566779' },
+            { name: 'Ms. L. Kavya', phone: '+91-9445566780' }
+        ]
     },
     'face-painting': {
         category: 'Non-Technical Events',
         title: 'Face Painting',
         description: 'Creative Art Competition - Transform faces into stunning canvases of art through vibrant, themed face painting designs.',
         color: 'pink',
-        registrationUrl:'https://forms.gle/dYGUhsu858EH7UV3A'
+        registrationUrl: 'https://forms.gle/dYGUhsu858EH7UV3A',
+        organizerContacts: [
+            { name: 'Ms. G. Latha', phone: '+91-9012345678' },
+            { name: 'Mr. M. Babu', phone: '+91-9012345679' },
+            { name: 'Ms. K. Hema', phone: '+91-9012345680' }
+        ]
     },
     'brand-to-boardroom': {
         category: 'Technical Events',
         title: 'Brand to Boardroom (Quiz & Digitalise it)',
         description: 'Brand Management & Corporate Strategy Competition - Transform your brand vision into boardroom success through strategic planning and brand positioning challenges.',
         color: 'blue',
-        registrationUrl:'https://forms.gle/MqcnoBEDNsKHrjFNA'
+        registrationUrl: 'https://forms.gle/MqcnoBEDNsKHrjFNA',
+        organizerContacts: [
+            { name: 'Dr. S. Reddy', phone: '+91-9898989898' },
+            { name: 'Ms. R. Priyanka', phone: '+91-9898989899' },
+            { name: 'Mr. V. Anand', phone: '+91-9898989800' }
+        ]
     },
     'strategix': {
         category: 'Technical Events',
         title: 'STRATEGIX (Business Simulation)',
         description: 'Strategic Management Competition - Test your strategic thinking and decision-making skills in complex business scenarios and competitive strategy challenges.',
         color: 'purple',
-        registrationUrl:'https://forms.gle/sHm7hBZnEGfV8MtBA'
+        registrationUrl: 'https://forms.gle/sHm7hBZnEGfV8MtBA',
+        organizerContacts: [
+            { name: 'Prof. M. Iyer', phone: '+91-9120099887' },
+            { name: 'Ms. T. Shalini', phone: '+91-9120099888' },
+            { name: 'Mr. H. Ramesh', phone: '+91-9120099889' }
+        ]
     },
     'vibrant-ventures': {
         category: 'Technical Events',
         title: 'Vibrant Ventures (Idea / Business Plan Pitching)',
         description: 'Entrepreneurship & Innovation Showcase - Present your innovative startup ideas, business models, and entrepreneurial ventures to a panel of judges and potential investors.',
         color: 'cyan',
-        registrationUrl:'https://forms.gle/bRcbECBuymh7aijS7'
+        registrationUrl: 'https://forms.gle/bRcbECBuymh7aijS7',
+        organizerContacts: [
+            { name: 'Ms. A. Fernandez', phone: '+91-9988123456' },
+            { name: 'Mr. J. Bosco', phone: '+91-9988123457' },
+            { name: 'Ms. R. Sahana', phone: '+91-9988123458' }
+        ]
     },
     'treasure-hunt': {
         category: 'Non-Technical Events',
         title: 'Treasure Hunt',
         description: 'A thrilling adventure where participants solve clues and puzzles to find hidden treasures.',
         color: 'gold',
-        registrationUrl:'https://forms.gle/MihxTH8CP3HuD7Yh9'
+        registrationUrl: 'https://forms.gle/MihxTH8CP3HuD7Yh9',
+        organizerContacts: [
+            { name: 'Mr. D. Naveen', phone: '+91-9447788990' },
+            { name: 'Ms. S. Meera', phone: '+91-9447788991' },
+            { name: 'Mr. P. Ajay', phone: '+91-9447788992' }
+        ]
     }
 };
 
@@ -323,6 +383,7 @@ function createEventModalContent() {
                 <div class="event-item ${event.color}">
                     <div class="event-item-title">${event.title}</div>
                     <div class="event-item-description">${event.description}</div>
+                    <div class="event-organizer">${(event.organizerContacts||[]).map(function(c){return '<div class="org-line"><strong>'+ (c.name||'TBD') +'</strong> &mdash; <a href="tel:'+ (c.phone||'') +'">'+ (c.phone||'N/A') +'</a></div>';}).join('')}</div>
                 </div>
             `;
         });
@@ -331,7 +392,7 @@ function createEventModalContent() {
     html += `
         <div class="event-info-footer">
             <p><strong>All events will be held on 06 March 2026</strong></p>
-            <p>at Hindusthan College of Engineering and Technology Valley Campus, Coimbatore</p>
+            <p>at Hindusthan College of Engineering and Technology, Valley Campus, Coimbatore</p>
         </div>
     `;
 
@@ -472,6 +533,21 @@ document.addEventListener('DOMContentLoaded', function() {
         imageArea.addEventListener('click', function() {
             if (eventGuidance[eventKey]) openEventGuidanceModal(eventKey);
         });
+    });
+
+    // Populate organiser contact on each event card
+    document.querySelectorAll('.event-card').forEach(function(card) {
+        const eventKey = card.getAttribute('data-event');
+        const info = eventKey ? eventData[eventKey] : null;
+        const infoArea = card.querySelector('.event-info');
+        if (info && infoArea && Array.isArray(info.organizerContacts)) {
+            const contactDiv = document.createElement('div');
+            contactDiv.className = 'card-organizer';
+            contactDiv.innerHTML = info.organizerContacts.map(function(c){
+                return '<div><strong>'+ (c.name || 'TBD') +'</strong> &mdash; <a href="tel:'+ (c.phone || '') +'">'+ (c.phone || 'N/A') +'</a></div>';
+            }).join('');
+            infoArea.appendChild(contactDiv);
+        }
     });
 
     // Register button clicks – redirect to form if event has registrationUrl, else show alert
