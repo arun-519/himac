@@ -535,21 +535,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Populate organiser contact on each event card
-    document.querySelectorAll('.event-card').forEach(function(card) {
-        const eventKey = card.getAttribute('data-event');
-        const info = eventKey ? eventData[eventKey] : null;
-        const infoArea = card.querySelector('.event-info');
-        if (info && infoArea && Array.isArray(info.organizerContacts)) {
-            const contactDiv = document.createElement('div');
-            contactDiv.className = 'card-organizer';
-            contactDiv.innerHTML = info.organizerContacts.map(function(c){
-                return '<div><strong>'+ (c.name || 'TBD') +'</strong> &mdash; <a href="tel:'+ (c.phone || '') +'">'+ (c.phone || 'N/A') +'</a></div>';
-            }).join('');
-            infoArea.appendChild(contactDiv);
-        }
-    });
-
     // Register button clicks – redirect to form if event has registrationUrl, else show alert
     const registerButtons = document.querySelectorAll('.register-btn');
     registerButtons.forEach(btn => {
