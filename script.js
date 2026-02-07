@@ -331,7 +331,7 @@ function createEventModalContent() {
     html += `
         <div class="event-info-footer">
             <p><strong>All events will be held on 06 March 2026</strong></p>
-            <p>at HiCET Valley Campus, Coimbatore</p>
+            <p>at Hindusthan College of Engineering and Technology Valley Campus, Coimbatore</p>
         </div>
     `;
 
