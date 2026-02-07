@@ -61,7 +61,7 @@ setInterval(updateCountdown, 1000);
 
 // Event data
 const eventData = {
-    'bi-battle ': {   
+    'bi-battle': {   
         category: 'Technical Events',
         title: 'BI BATTLE (Data Visualization)',
         description: 'Business Intelligence Competition - Showcase your data analytics and business intelligence skills through competitive challenges and case studies.',
@@ -128,14 +128,15 @@ const eventData = {
         category: 'Technical Events',
         title: 'STRATEGIX (Business Simulation)',
         description: 'Strategic Management Competition - Test your strategic thinking and decision-making skills in complex business scenarios and competitive strategy challenges.',
-        color: 'purple'
+        color: 'purple',
+        registrationUrl:'https://forms.gle/sHm7hBZnEGfV8MtBA'
     },
     'vibrant-ventures': {
         category: 'Non-Technical Events',
         title: 'Vibrant Ventures (Idea / Business Plan Pitching)',
         description: 'Entrepreneurship & Innovation Showcase - Present your innovative startup ideas, business models, and entrepreneurial ventures to a panel of judges and potential investors.',
         color: 'cyan',
-        registrationUrl:'https://docs.google.com/forms/d/e/1FAIpQLSeJHrZwZzBSlk6gsHFLtUdmabJ1KVLmrQXaX0K9FLkPAk5_1w/viewform?usp=header'
+        registrationUrl:'https://forms.gle/bRcbECBuymh7aijS7'
     },
     'treasure-hunt': {
         category: 'Non-Technical Events',
