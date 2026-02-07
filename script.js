@@ -85,7 +85,7 @@ const eventData = {
     'Project-expo': {
         category: 'Non-Technical Events',
         title: 'Project Expo',
-        description: 'Entrepreneurship Development Showcase - Present innovative startup ideas and entrepreneurial projects to investors and mentors.',
+        description: 'Entrepreneurship Development Showcase - Display your Prototype and entrepreneurial projects to investors and mentors.',
         color: 'orange', 
         registrationUrl:'https://forms.gle/uRL8KnMfFmAJmtpX9'
     },
@@ -132,7 +132,7 @@ const eventData = {
         registrationUrl:'https://forms.gle/sHm7hBZnEGfV8MtBA'
     },
     'vibrant-ventures': {
-        category: 'Non-Technical Events',
+        category: 'Technical Events',
         title: 'Vibrant Ventures (Idea / Business Plan Pitching)',
         description: 'Entrepreneurship & Innovation Showcase - Present your innovative startup ideas, business models, and entrepreneurial ventures to a panel of judges and potential investors.',
         color: 'cyan',
@@ -672,3 +672,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 300);
 });
 
+// Toggle Read More Content Function
+function toggleContent(contentId, button) {
+    const content = document.getElementById(contentId);
+    if (content) {
+        content.classList.toggle('active');
+        button.textContent = content.classList.contains('active') ? 'Read Less' : 'Read More';
+        button.classList.toggle('active');
+    }
+}
