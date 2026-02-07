@@ -47,7 +47,7 @@ body {
 }
 
 .brand-logo {
-    width: 110px;
+    width: 140px;
     height: auto;
     object-fit: contain;
     display: block;
@@ -55,7 +55,7 @@ body {
 }
 
 .himac26-logo {
-    width: 200px;
+    width: 260px;
     height: auto;
     object-fit: contain;
     display: block;
@@ -67,7 +67,7 @@ body {
 }
 
 .hit-logo {
-    width: 110px;
+    width: 140px;
     height: auto;
     object-fit: contain;
     display: block;
@@ -657,6 +657,29 @@ body {
 .event-card:hover .event-img {
     transform: scale(1.05);
 }
+
+/* Event organiser/contact in events modal */
+.event-organizer {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+.event-organizer a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+.event-organizer a:hover {
+    text-decoration: underline;
+}
+
+/* Small organiser line shown on event cards */
+.card-organizer {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #444;
+}
+.card-organizer a { color: #1a73e8; text-decoration: none; }
+.card-organizer a:hover { text-decoration: underline; }
 
 .sponsor-note {
     margin-top: 10px;
@@ -2029,7 +2052,7 @@ body {
     }
 
     .brand-logo {
-        width: 70px;
+        width: 95px;
         height: auto;
     }
 
@@ -2045,13 +2068,13 @@ body {
 
     /* Show HiT logo on mobile with reduced size */
     .hit-logo {
-        width: 65px;
+        width: 90px;
         height: auto;
         display: block;
     }
 
     .himac26-logo {
-        width: 140px;
+        width: 180px;
         margin-top: 4px;
     }
 
