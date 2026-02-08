@@ -68,9 +68,8 @@ const eventData = {
         color: 'blue',
         registrationUrl: 'https://forms.gle/p8GhQYeqK3MGYG36A',
         organizerContacts: [
-            { name: 'Prof. R. Kumar', phone: '+91-9876543210' },
-            { name: 'Ms. A. George', phone: '+91-9123400001' },
-            { name: 'Mr. L. Thomas', phone: '+91-9001100223' }
+            { name: 'Mr.Sri Ram R', phone: '+91-63830 24512' },
+            { name: 'Mr.Kanishkha Chella E', phone: '+91-94899 63004' },
         ]
     },
     'stock-war': {
@@ -80,9 +79,8 @@ const eventData = {
         color: 'green',
         registrationUrl: 'https://forms.gle/4ZBAX1qXxTeVm4p87',
         organizerContacts: [
-            { name: 'Ms. S. Mehta', phone: '+91-9123456780' },
-            { name: 'Mr. P. Narayan', phone: '+91-9123456791' },
-            { name: 'Ms. R. Anitha', phone: '+91-9123456792' }
+            { name: 'Ms. Swathilakshmi CV', phone: '+91-8078851872' },
+            { name: 'Mr. Vigneswaran S', phone: '+91-8825724370' }
         ]
     },
     'best-manager': {
@@ -92,9 +90,8 @@ const eventData = {
         color: 'purple',
         registrationUrl: 'https://forms.gle/Yi1RJXCMuxmEqWpQ6',
         organizerContacts: [
-            { name: 'Dr. A. Nair', phone: '+91-9001122334' },
-            { name: 'Ms. V. Meenakshi', phone: '+91-9001122335' },
-            { name: 'Mr. D. Karthik', phone: '+91-9001122336' }
+            { name: 'Mr.Udhayanithi S', phone: '+91-72007 08938' },
+            { name: 'Mr.Vengatesh K', phone: '+91-97513 93844' },
         ]
     },
     'Project-expo': {
@@ -104,9 +101,8 @@ const eventData = {
         color: 'orange',
         registrationUrl: 'https://forms.gle/uRL8KnMfFmAJmtpX9',
         organizerContacts: [
-            { name: 'Mr. V. Raj', phone: '+91-9988776655' },
-            { name: 'Ms. H. Rekha', phone: '+91-9988776656' },
-            { name: 'Mr. S. Arjun', phone: '+91-9988776657' }
+            { name: 'Ms.Josephin Rasula', phone: '+91-86107 63539' },
+            { name: 'Mr. Jefrin', phone: '+91-93454 14653' },
         ]
     },
     'talent-show': {
@@ -116,9 +112,9 @@ const eventData = {
         color: 'orange',
         registrationUrl: 'https://forms.gle/FUSo46xjWJQsi4UH7',
         organizerContacts: [
-            { name: 'Ms. N. Priya', phone: '+91-9345678120' },
-            { name: 'Mr. A. Kannan', phone: '+91-9345678121' },
-            { name: 'Ms. S. Divya', phone: '+91-9345678122' }
+            { name: 'Mr.G.Sharath', phone: '+91-73971 54670' },
+            { name: 'Ms.Srimathi.S', phone: '+91-70105 93891' },
+            { name: 'Mr.K.Vengatesh', phone: '+91-97513 93844' }
         ]
     },
     'mime': {
@@ -128,9 +124,9 @@ const eventData = {
         color: 'purple',
         registrationUrl: 'https://forms.gle/LufUuK9RzNRcBKzQ7',
         organizerContacts: [
-            { name: 'Mr. K. Suresh', phone: '+91-9870011223' },
-            { name: 'Ms. P. Latha', phone: '+91-9870011224' },
-            { name: 'Mr. R. Vinod', phone: '+91-9870011225' }
+            { name: 'Mr.Kishore R', phone: '+91-95976 12550' },
+            { name: 'Mr.Gokul S', phone: '+91-82208 16426' },
+            { name: 'Mr.E.Kanishkha Chella E', phone: '+91-94899 630045' }
         ]
     },
     'Hpl-auction': {
@@ -140,9 +136,9 @@ const eventData = {
         color: 'green',
         registrationUrl: 'https://forms.gle/khL6FC18kpvS52or7',
         organizerContacts: [
-            { name: 'Mr. R. Balaji', phone: '+91-9445566778' },
-            { name: 'Mr. S. Rohit', phone: '+91-9445566779' },
-            { name: 'Ms. L. Kavya', phone: '+91-9445566780' }
+            { name: 'Mr.Dinesh Kumar', phone: '+91-70103 10419' },
+            { name: 'Ms.Kowslaya .M', phone: '+91-88380 32990' },
+            { name: 'Mr. K.Vengatesh', phone: '+91-97513 93844' }
         ]
     },
     'face-painting': {
@@ -152,9 +148,9 @@ const eventData = {
         color: 'pink',
         registrationUrl: 'https://forms.gle/dYGUhsu858EH7UV3A',
         organizerContacts: [
-            { name: 'Ms. G. Latha', phone: '+91-9012345678' },
-            { name: 'Mr. M. Babu', phone: '+91-9012345679' },
-            { name: 'Ms. K. Hema', phone: '+91-9012345680' }
+            { name: 'Ms.Fazeena', phone: '+91-85904 72387' },
+            { name: 'Ms.Nandhini S.B', phone: '+91-93800 05040' },
+            { name: 'Mr.Pown Kumar S', phone: '+91-87548 86957' }
         ]
     },
     'brand-to-boardroom': {
@@ -164,9 +160,8 @@ const eventData = {
         color: 'blue',
         registrationUrl: 'https://forms.gle/MqcnoBEDNsKHrjFNA',
         organizerContacts: [
-            { name: 'Dr. S. Reddy', phone: '+91-9898989898' },
-            { name: 'Ms. R. Priyanka', phone: '+91-9898989899' },
-            { name: 'Mr. V. Anand', phone: '+91-9898989800' }
+            { name: 'Mr. Jashwa', phone: '+91-8608774454' },
+            { name: 'Mr. Pown Kumar ', phone: '+91-87548 86957' },
         ]
     },
     'strategix': {
@@ -176,9 +171,8 @@ const eventData = {
         color: 'purple',
         registrationUrl: 'https://forms.gle/sHm7hBZnEGfV8MtBA',
         organizerContacts: [
-            { name: 'Prof. M. Iyer', phone: '+91-9120099887' },
-            { name: 'Ms. T. Shalini', phone: '+91-9120099888' },
-            { name: 'Mr. H. Ramesh', phone: '+91-9120099889' }
+            { name: 'Mr. Pravin V', phone: '+91-88500 36868' },
+            { name: 'Mr.Kavin Siddharth B', phone: '+91-97912 82410' },
         ]
     },
     'vibrant-ventures': {
@@ -188,9 +182,8 @@ const eventData = {
         color: 'cyan',
         registrationUrl: 'https://forms.gle/bRcbECBuymh7aijS7',
         organizerContacts: [
-            { name: 'Ms. A. Fernandez', phone: '+91-9988123456' },
-            { name: 'Mr. J. Bosco', phone: '+91-9988123457' },
-            { name: 'Ms. R. Sahana', phone: '+91-9988123458' }
+            { name: 'Ms. Josephin Rasula I', phone: '+91-86107 63539' },
+            { name: 'Mr. Jefrin', phone: '+91-93454 14653' },
         ]
     },
     'treasure-hunt': {
@@ -200,9 +193,8 @@ const eventData = {
         color: 'gold',
         registrationUrl: 'https://forms.gle/MihxTH8CP3HuD7Yh9',
         organizerContacts: [
-            { name: 'Mr. D. Naveen', phone: '+91-9447788990' },
-            { name: 'Ms. S. Meera', phone: '+91-9447788991' },
-            { name: 'Mr. P. Ajay', phone: '+91-9447788992' }
+            { name: 'Mr.Prabhu S', phone: '+91-95244 20445' },
+            { name: 'Mr.Kathirvelavan G', phone: '+91-82481 05167' },
         ]
     }
 };
@@ -222,20 +214,19 @@ const eventGuidance = {
     'stock-war': {
         title: 'Stock War – Guidelines',
         points: [
-            'Trading allowed only during event hours.',
-            'All trades must be done on the given platform.',
-            'No unfair practices; violations lead to disqualification.',
-            'Smart Phones & Laptops are allowed.',
-            'Judges’ and coordinators’ decisions are final.'
+           'Trading allowed only during event hours.',
+           'Smart Phones & Laptops are allowed.',
+           'No unfair practices; violations lead to disqualification.',
+           'Judges’ decisions are final.'
         ]
     },
     'mime': {
         title: 'Mime – Guidelines',
         points: [
             'Time limit: 5-7 mins/ team',
-            'The use of physical props is strictly prohibited.',
+            'Use of physical props is strictly prohibited.',
             'Instrumental background music is highly recommended.',
-            'The act must not contain any vulgarity, obscenity, or offensive gestures.',
+            'Act must not contain any vulgarity, obscenity, or offensive gestures.',
             'Creativity and expression will be judged.',
             'Judges’ decision will be final and binding.'
         ]
@@ -243,7 +234,6 @@ const eventGuidance = {
     'best-manager': {
         title: 'Best Manager – Guidelines',
         points: [
-            'Individual participation only.',
             'Formal attire recommended.',
             'Digital devices are restricted.',
             'All rounds are elimination-based.',
@@ -257,7 +247,7 @@ const eventGuidance = {
             'Use of electronic devices is not allowed.',
             'No discussion or external help during the quiz.',
             'Any malpractice will lead to disqualification.',
-            'Quizmaster’s decision will be final.'
+            'Judges’ decision will be final.'
         ]
     },
     'strategix': {
@@ -273,8 +263,8 @@ const eventGuidance = {
     'vibrant-ventures': {
         title: 'Vibrant Ventures – Guidelines',
         points: [
-            'Teams must present original startup ideas.',
-            'Time limits must be strictly followed.',
+            'Teams must present original ideas / business plan.',
+            'Time limits must be strictly followed (Maximum : 10 minutes).',
             'Plagiarism or unfair practices lead to disqualification.',
             'Evaluation is based on innovation and feasibility.',
             'Judges’ decisions are final.'
@@ -283,8 +273,8 @@ const eventGuidance = {
     'face-painting': {
         title: 'Face Painting – Guidelines',
         points: [
-            'theme will be given 4th March 2026.',
-            'time limit: 3 hours.',
+            'Theme will be given on 4 Mar 2026',
+            'Time Limit : 3 hours',
             'Teams must use safe, non-toxic colors.',
             'Creativity and neatness will be judged.',
             'No copying others’ designs.',
@@ -296,9 +286,9 @@ const eventGuidance = {
         title: 'Talent Show – Guidelines',
         points: [
             'Performances must be original.',
-            'Time limits must be followed (Maximum:5 minutes).',
+            'Time limit (Maximum: 5 minutes).',
             'No offensive content allowed.',
-            'Use of props or equipment must be pre-approved.',
+            'Use of props or equipment must be preapproved.',
             'Judges’ decisions are final.'
         ]
     },
@@ -307,7 +297,7 @@ const eventGuidance = {
         points: [
             'Each team has a fixed budget to buy players.',
             'Bidding is open only during the auction session.',
-            'Highest bid wins the player.',
+            'Player will be alloted to highest bidder.',
             'No unfair practices or collusion allowed.',
             'Decisions by the auctioneer are final.'
         ]
@@ -315,9 +305,9 @@ const eventGuidance = {
     'Project-expo': {
         title: 'Project Expo – Guidelines',
         points: [
-            'Projects must be original and prepared by the team.',
-            'All equipment and materials should be ready beforehand.',
-            'Judges will evaluate creativity, clarity, and functionality.',
+            'Project / Prototype must be original, Plagiarism leads to disqualification.',
+            'All required materials must be set up in advance.',
+            'Evaluation criteria : creativity, clarity, and functionality.',
             'Judges’ decisions are final.'
         ]
     },
