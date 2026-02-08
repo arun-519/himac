@@ -2052,7 +2052,7 @@ body {
     }
 
     .brand-logo {
-        width: 95px;
+        width: 70px;
         height: auto;
     }
 
@@ -2068,7 +2068,7 @@ body {
 
     /* Show HiT logo on mobile with reduced size */
     .hit-logo {
-        width: 90px;
+        width: 70px;
         height: auto;
         display: block;
     }
