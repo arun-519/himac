@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiMaC 2026 - Hindusthan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Playfair+Display:wght@700&family=Alice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <!-- Left Logo -->
+            <div class="header-left">
+                <img src="images/hicet-logo.jpg" alt="HiCET Logo" class="brand-logo">
+            </div>
+
+            <!-- Center Content -->
+    
+            <div class="header-center">
+                <h1 class="site-title">Hindusthan Business School</h1>
+                <p class="site-subtitle">proudly presents</p>
+                <img src="images/himac.jpg" alt="HiMaC 26 Logo" class="himac26-logo">
+                <div class="header-marquee">
+                    <span class="header-marquee-text">HINDUSTHAN MANAGEMENT CARNIVAL 2026 </span>
+                    
+                </div>
+            </div>
+
+            <!-- Right Logo -->
+            <div class="header-right">
+                <img src="images/hit.jpg" alt="HiT Logo" class="hit-logo">
+                <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav" id="mainNav">
+        <a href="#about" class="nav-link" id="aboutLink">About</a>
+        <div class="nav-dropdown">
+            <a href="#events" class="nav-link" id="eventsLink">Events</a>
+        </div>
+        <a href="#contacts" class="nav-link" id="contactsLink">Contact</a>
+
+        <a href="#map" class="nav-link">Map</a>
+        <a href="#shopping" class="nav-link" id="shoppingLink">Shopping & Entertainment</a>
+        <a href="#sponsor" class="nav-link" id="sponsorLink">Sponsors</a>
+        <a href="#" class="nav-link" id="guidelinesLink">General Guidelines</a>
+    </nav>
+
+    <!-- Guidelines Modal -->
+             <div class="modal" id="guidanceModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeGuidanceModal">&times;</span>
+            <br><br>
+            <div class="guidelines-body">
+                <img src="images/poster.jpeg" alt="HiMaC 2026 Guidelines Poster" class="guidelines-poster">
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Countdown Timer -->
+        <section class="countdown-section">
+            <h2 class="countdown-title">Event Countdown</h2>
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <span class="countdown-time" id="countdownDays">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-time" id="countdownHours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-time" id="countdownMinutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-time" id="countdownSeconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+            <p class="countdown-event-date">HiMaC 2026 - 06 March 2026</p>
+        </section>
+
+        <!-- Title Sponsor Banner --><span class="title-sponsor-pill">Title Sponsor</span>
+        <section class="title-sponsor-section">
+            <div class="title-sponsor-card">
+                <a href="https://anushglobal.com/" target="_blank" rel="noopener noreferrer" class="title-sponsor-link">
+                    <div class="title-sponsor-marquee">
+                        <div class="title-sponsor-track">
+                            <div class="title-sponsor-text">
+                                <img src="images/titlesponsor.png" alt="Anuswaryaa Enterprises Private Limited Logo" class="title-sponsor-logo">
+                                <h2 class="title-sponsor-name">VSS Anuswaryaa Industry E-Vehicle Charging Station</h2>
+                            </div>
+                        <div class="title-sponsor-text" aria-hidden="true">
+                            <img src="images/titlesponsor.png" alt="" class="title-sponsor-logo">
+                            <h2 class="title-sponsor-name">VSS Anuswaryaa Industry E-Vehicle Charging Station</h2>
+                        </div>
+                        <div class="title-sponsor-text" aria-hidden="true">
+                            <img src="images/titlesponsor.png" alt="" class="title-sponsor-logo">
+                            <h2 class="title-sponsor-name">VSS Anuswaryaa Industry E-Vehicle Charging Station</h2>
+                        </div> 
+                        <div class="title-sponsor-text" aria-hidden="true">
+                            <img src="images/titlesponsor.png" alt="" class="title-sponsor-logo">
+                            <h2 class="title-sponsor-name">VSS Anuswaryaa Industry E-Vehicle Charging Station</h2>
+                        </div>
+                        <div class="title-sponsor-text" aria-hidden="true">
+                            <img src="images/titlesponsor.png" alt="" class="title-sponsor-logo">
+                            <h2 class="title-sponsor-name">VSS Anuswaryaa Industry E-Vehicle Charging Station</h2>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                </a>
+            </div>
+        </section>
+
+        <div class="events-grid" id="events">
+            <!-- Event Cards -->
+            <div class="event-card" data-event="bi-battle">
+                <div class="event-image bi-battle-img">
+                    <img src="images/bi-battle.jpeg" alt="BI BATTLE - Analytics Dashboard" class="event-img">
+                </div>
+                <div class="event-info">
+                    <h3 class="event-title">BI BATTLE <br>(Data Visualization)<br></h3>
+                    <p class="event-date blue">06 March 2026</p>
+                    <button class="register-btn blue-btn">Register Now</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-event="stock-war">
+                <div class="event-image stock-war-img">
+                    <img src="images/stock-war.jpg" alt="Stock War - Trading Chart" class="event-img">
+                </div>
+                <div class="event-info">
+                    <h3 class="event-title">Stock War</h3>
+                    <p class="event-date green">06 March 2026</p>
+                    <button class="register-btn green-btn">Register Now</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-event="best-manager">
+                <div class="event-image best-manager-img">
+                    <img src="images/best-manager.jpg" alt="Best Manager - Team Collaboration" class="event-img">
+                </div>
+                <div class="event-info">
+                    <h3 class="event-title">Best Manager</h3>
+                    <p class="event-date purple">06 March 2026</p>
+                    <button class="register-btn purple-btn">Register Now</button>
+                </div>
+            </div>
+ <div class="event-card" data-event="brand-to-boardroom">
+                <div class="event-image board-img">
+                    <img src="images/brand-to-boardroom.jpeg" alt="Brand to Boardroom" class="event-img">
+                </div>
+                <div class="event-info">
+                    <h3 class="event-title">Brand to Boardroom<br>(Quiz & Digitalise it)<br></h3>
+                    <p class="event-date brown">06 March 2026</p>
+                    <button class="register-btn brown-btn">Register Now</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-event="strategix">
+                <div class="event-image strategy-img">
+                    <img src="images/strategy.jpg" alt="STRATEGIX" class="event-img">
+                </div>
+                <div class="event-info">
+                    <h3 class="event-title">STRATEGIX<br> (Business simulation)<br></h3>
+                    <p class="event-date lime">06 March 2026</p>
+                    <button class="register-btn lime-btn">Register Now</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-event="vibrant-ventures">
+                <div class="event-image vibrant-img">
+                    <img src="images/vibrant-ventures.jpg" alt="Vibrant Ventures - Entrepreneurship Event" class="event-img">
+                </div>
+                <div class="event-info">
+                    <h3 class="event-title">Vibrant Ventures<br>(Idea / Business Plan Pitching)<br></h3>
+                    <p class="event-date cyan">06 March 2026</p>
+                    <button class="register-btn cyan-btn">Register Now</button>
+                </div>
+            </div>
+
+             <div class="event-card" data-event="Project-expo">
+                <div class="event-image startup-expo-img">
+                    <img src="images/project-expo.jpeg" alt="Project Expo - Modern Office" class="event-img">
+                </div>
+                <div class="event-info">
+                    <h3 class="event-title">Project Expo</h3>
+                    <p class="event-date yellow">06 March 2026</p>
+                    <button class="register-btn yellow-btn">Register Now</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-event="talent-show">
+                <div class="event-image talent-show-img">
+                    <img src="images/talent-show.jpg" alt="1 Minute Talent Show - Concert Stage" class="event-img">
+                </div>
+                <div class="event-info">
+                    <h3 class="event-title">Talent Show</h3>
+                    <p class="event-date orange">06 March 2026</p>
+                    <button class="register-btn orange-btn">Register Now</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-event="mime">
+                <div class="event-image mime-img">
+                    <img src="images/mime.jpg" alt="Mime - Theater Performance" class="event-img">
+                </div>
+                <div class="event-info">
+                    <h3 class="event-title">Mime</h3>
+                    <p class="event-date red">06 March 2026</p>
+                    <button class="register-btn red-btn">Register Now</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-event="Hpl-auction">
+                <div class="event-image ipl-auction-img">
+                    <img src="images/Hpl auction.png" alt="IPL Auction - TATA IPL Logo" class="event-img">
+                </div>
+                <div class="event-info">
+                    <h3 class="event-title">HPL Auction</h3>
+                    <p class="event-date teal">06 March 2026</p>
+                    <button class="register-btn teal-btn">Register Now</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-event="face-painting">
+                <div class="event-image face-painting-img">
+                    <img src="images/face-painting.jpg" alt="Face Painting - Artistic Design" class="event-img">
+                </div>
+                <div class="event-info">
+                    <h3 class="event-title">Face Painting</h3>
+                    <p class="event-date pink">06 March 2026</p>
+                    <button class="register-btn pink-btn">Register Now</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-event="treasure-hunt">
+                <div class="event-image treasure-hunt-img">
+                    <img src="images/treasure-hunt.jpg" alt="Treasure Hunt - Adventure Game" class="event-img">
+                </div>
+                <div class="event-info">
+                    <h3 class="event-title">Treasure Hunt</h3>
+                    <p class="event-date gold">06 March 2026</p>
+                    <button class="register-btn gold-btn">Register Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="sponsors-grid" id="sponsor">
+           
+
+           
+        <!-- Sponsors Section -->
+        <div class="sponsors-grid" id="sponsor">
+           
+
+            <div class="event-card sponsors-card" data-event="sponsors">
+                <div class="sponsors-card-content">
+                    <h2 class="sponsors-card-title">Our Sponsors</h2>
+                    
+                    <div class="sponsor-category">
+                        <h3 class="sponsor-category-title">Title Sponsor</h3>
+                        <div class="sponsor-logos-container">
+                            <a href="https://anushglobal.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/titlesponsor.png" alt="Title Sponsor" class="sponsor-card-logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sponsor-category">
+                        <h3 class="sponsor-category-title">Associate Sponsor</h3>
+                        <div class="sponsor-logos-container">
+                            <a href="https://jignature.com/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/associate.jpg" alt="Associate Sponsor" class="sponsor-card-logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sponsor-category">
+                        <h3 class="sponsor-category-title">Support Sponsors</h3>
+                        <div class="sponsor-logos-container">
+                            <a href="https://thestorys.in/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/supports.png" alt="Support Sponsor 1" class="sponsor-card-logo">
+                            </a>
+                            <img src="images/support2s.png" alt="Support Sponsor 2" class="sponsor-card-logo">
+                            <img src="images/support3.jpg" alt="Support Sponsor 3" class="sponsor-card-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-card sponsors-card" data-event="sponsors">
+            <div class="sponsors-card-content">
+                <h2 class="sponsors-card-title">Proud Partners</h2>
+                
+                <div class="sponsor-category">
+                    <div class="sponsor-logos-container">
+                        <img src="images/partner1.jpeg" alt="Title Sponsor" class="sponsor-card-logo">
+                        <img src="images/partner2.jpeg" alt="Title Sponsor" class="sponsor-card-logo">
+                        <img src="images/partner3.jpeg" alt="Title Sponsor" class="sponsor-card-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <!-- General Guidelines Popup (opens on load) -->
+   <div id="guidelinesModal" class="guidelines-modal">
+        <div class="guidelines-modal-content">
+            <span class="guidelines-close" id="guidelinesClose">&times;</span>
+            <h2 class="modal-title">General Guidelines</h2>
+            <div class="modal-body">
+                <div class="guidance-box">
+                    <ul class="guidance-list">
+                        <li>A student can participate in <strong>only one event</strong> </li>
+                        <li><strong>College ID card is mandatory</strong> for participant</li>
+                        <li>Team members should be from <strong>same college</strong></li>
+                        <li><strong>Dress code:</strong> Smart casual / Formal Dress only allowed</li>
+                        <li>Any form of malpractice will lead to <strong>immediate disqualification</strong></li>
+                        <li>Lunch  and refreshment will be provided</li>
+                        <li>Partcipant must reach the Venue <strong>at least 10 minutes before</strong> the event</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Details Modal -->
+    <div class="modal" id="eventModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <h2 class="modal-title">HiMaC 2026 Events</h2>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Guidelines Modal (opens on event card image click) -->
+    <div class="modal" id="eventGuidanceModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeEventGuidanceModal">&times;</span>
+            <h2 class="modal-title" id="eventGuidanceTitle">Event Guidelines</h2>
+            <div class="modal-body" id="eventGuidanceBody">
+                <!-- Content filled by script -->
+            </div>
+        </div>
+    </div>
+
+    <!-- About Modal -->
+    <div class="modal" id="aboutModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeAboutModal">&times;</span>
+            <div class="modal-body">
+                <h2 class="about-title">About HiMaC</h2>
+                <p class="about-text">
+                    Hindusthan Management Carnival (HiMaC) is an  Annual intercollegiate management fest designed to showcase managerial talent through competitions which include business quizzes, case studies, marketing challenges, startup pitches, management games, and cultural performances. This carnival also provides a unique platform for students across various colleges to engage, compete, network, and learn.
+                </p>
+
+                 <h2 class="about-title">About Department (MBA)</h2>
+                <p class="about-text">
+                    Department of Management Science was established in the year 2005, with a view to impart professional education in the field of business management. The MBA programme is affiliated to Anna University, Chennai and approved by All India Council of Technical Education (AICTE), New Delhi. The college offers full time two years MBA Degree Programme.
+                </p>
+                <p class="about-text">
+                    A team of dedicated faculty members continuously monitor the corporate requirements and accordingly the students are trained in managerial skills, communication skills and leadership qualities. The faculty members with their extensive knowledge and industrial exposure strive to bring a real life experience into the classroom. The sanctioned intake of the MBA department is 120 students from the academic year 2024-2025 onwards.
+                </p>
+                <p class="about-text">
+                    Our students are well placed in corporates likes Oracle, JSW Steel, Swiggy, LeMeridien, CareerNet Consulting, Muthooot Finance, KGiSL, IndusInd Bank, Hexaware technologies, State bank of India, IBM, Parle, Udaan, BYJU, Canara bank, HCL, Reliance Retail, etc.
+                </p>
+                
+                <div class="vision-mission-section">
+                    <div class="vision-mission-box">
+                        <h3 class="vision-mission-title">VISION</h3>
+                        <p class="vision-mission-text">
+                            Emerge as a premier business school recognized globally for management education, practice and research that propels lifelong learning with ethical and professional values.
+                        </p>
+                    </div>
+                    <div class="vision-mission-box">
+                        <h3 class="vision-mission-title">MISSION</h3>
+                        <p class="vision-mission-text">
+                            <strong>M1:</strong> Promote a collaborative learning environment that delivers the best in teaching, research, and innovation with a global perspective.
+                        </p>
+                        <p class="vision-mission-text">
+                            <strong>M2:</strong> Imbibe entrepreneurial and innovative capabilities to manage change and transformation across various disciplines of management practices.
+                        </p>
+                        <p class="vision-mission-text">
+                            <strong>M3:</strong> Nurture professional and ethical responsibilities related to industry, society, and environment.
+                        </p>
+                    </div>
+                </div>
+                
+                <h2 class="about-title">About HiCET</h2>
+                <p class="about-text">
+                    Hindusthan College of Engineering and Technology (HiCET) was established in the year 2000 by the great Industrialist and Philanthropist, Thiru.T.S.R.Khannaiyann, founder Chairman of Hindusthan Educational and Charitable Trust whose determination and dynamism made possible the realization of this institution of excellence. Surrounded with natures pristine beauty and an excellent infrastructure coupled with dedicated and experienced faculty has made the campus a much sought-after abode of learning.
+                </p>
+                <p class="about-text">
+                    HiCET is one of the premier technological institutions inculcating quality and value-based education through innovative teaching learning process for holistic development of the students.
+                </p>
+                <p class="about-text">
+                    At present, the college is offering 17 UG Programmes, 6 PG Programmes and 14 Research Programmes. Currently around 6000 students pursuing various Undergraduate Programmes (B.E./B.Tech.), Postgraduate Programmes (M.E./M.Tech, MBA & MCA) and Research Programs (Ph.D.) in the institution and are mentored by above 366 well qualified and experienced faculty members. The institution is recognized under Section 2(f) and 12B of University Grants Commission (UGC) and is an Autonomous Institution from 2016-17, affiliated to Anna University, Chennai with permanent affiliation for most of the programmes, approved by the All India Council for Technical Education (AICTE). 86.6% of eligible programs are NBA accredited and our institution has been accredited by NAAC 'A++' Grade with CGPA of 3.69 out of 4 in Cycle 2 and Institution Ranked NIRF - India Rankings 2024 in Band 201-300 in Engineering category and Band 11-50 in Innovation category. Also an ISO 9001:2015 certified institution.
+                </p>
+                <p class="about-text">
+                    Many Industry-Integrated programmes and the Hinnovation Centre of the institution encourages creativity, innovation and risk acceptance, identifying business thereby encouraging entrepreneurship and start-ups.
+                </p>
+                <p class="about-text">
+                    The management also runs 12 other institutions in which 6 are higher-educational, which are highly rated by the society and accreditation and ranking bodies. With the very strong industrial experience for more than 40 years, the management also having 14 industries in the engineering domain such as transformers, control panels, switch gears, pipes, etc. and having 3 multi-specialty hospitals with each 350 beds in Coimbatore, HiCET nurtures future global leaders by imparting right knowledge, skills and building attitudes among students to face the world in a fresh, energetic and unrestrictive work environment, considering the integration of SDGs into the curriculum.
+                </p>
+                 <div class="quote-box">
+                    <p class="quote">"Hindusthan College of Engineering and Technology march towards greatness by following the educational doctrines of our beloved leader, Dr APJ Abdul Kalam in transforming the youth of today to become leaders of tomorrow."</p>
+                </div>
+                <h2 class="about-title">About HITECH</h2>
+                <p class="about-text">
+                    Hindusthan Institute of Technology (HITECH) was started in the year 2007 by the industrialist and philanthropist Thiru T.S.R. Khannaiyann. It is an Autonomous Institution focused on educating and preparing men and women for leadership in industry, government, and educational institutions; advancing the engineering professions' knowledge base; and influencing the future directions of engineering education and practice.
+                </p>
+                <p class="about-text">
+                    The college offers well-furnished classrooms, state-of-the-art laboratories, computer centres and a well-stocked library. Separate hostels with modern amenities are provided for men and women. The campus includes lush green lawns, playgrounds, a gym, facilities for indoor games and a fleet of vehicles to cater to transport needs.
+                </p>
+                <p class="about-text">
+                    HITECH emphasizes not only academic education but also character building with moral and ethical values. Since its inception, the college has provided world-class facilities and infrastructure for high-quality education and learning, focusing on transformational leadership, innovative training methodologies, and guiding students toward success.
+                </p>
+                <p class="about-text">
+                    The college library holds more than thirty thousand books and over 500 national & international journals, and it also hosts digital resources such as the IIT-NPTEL video library. Outdoor facilities for tennis, basketball and cricket are available, while the gymnasium and common rooms provide spaces for gymnastics, badminton, table tennis and other indoor games.
+                </p>
+
+                <div class="vision-mission-section">
+                    <div class="vision-mission-box">
+                        <h3 class="vision-mission-title">Our Vision</h3>
+                        <p class="vision-mission-text">To be a top-tier institution that empowers students with cutting-edge skills, nurtures innovation, and cultivates sustainability, preparing them to prosper in a dynamic global future.</p>
+                    </div>
+                    <div class="vision-mission-box">
+                        <h3 class="vision-mission-title">Our Mission</h3>
+                        <p class="vision-mission-text"><strong>MI1:</strong> Empower students with advanced skills and knowledge, enabling them to become leaders in their fields.</p>
+                        <p class="vision-mission-text"><strong>MI2:</strong> Foster a culture of innovation and critical thinking, inspiring students to pioneer solutions for tomorrow's challenges.</p>
+                        <p class="vision-mission-text"><strong>MI3:</strong> Cultivate environmental responsibility, preparing graduates to create a sustainable and ever-evolving global future.</p>
+                    </div>
+                </div>
+
+               
+            
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeContactModal">&times;</span>
+            <h2 class="modal-title">Contact Us</h2>
+            <div class="modal-body">
+                <div class="contact-section">
+                    <h3 class="contact-section-title">HiMaC 2026 Faculty coordinators</h3>
+                    <div class="contact-person">
+                        <div class="contact-name">Dr V Kanimozhi</div>
+                        <div class="contact-role">Associate Professor / MBA (HiCET)</div>
+                        <div class="contact-info">
+                            <a href="tel:9080702602" class="contact-link">9894793391</a>
+                        </div>
+                    </div>
+                        <div class="contact-person">
+                            <div class="contact-name">Mr J Rupesh </div>
+                            <div class="contact-role">Assistant Professor / MBA (HiTECH)</div>
+                            <div class="contact-info">
+                                <a href="tel:9080702602" class="contact-link">9894793391</a>
+                            </div>
+                        </div>
+                      <h3 class="contact-section-title">HiMaC 2026 Students coordinators</h3>
+                    <div class="contact-person">
+                        <div class="contact-name">Mr. Shanmugapriyan V</div>
+                        <div class="contact-role">Chairman, Department of Management Sciences (HiCET)</div>
+                        <div class="contact-info">
+                            <a href="tel:9080702602" class="contact-link">9080702602</a>
+                        </div>
+                    </div>
+                    <div class="contact-person">
+                        <div class="contact-name">Mr. Karthik </div>
+                        <div class="contact-role">Vice Chairman, Department of Management Sciences (HiCET)</div>
+                        <div class="contact-info">
+                            <a href="tel:9080702602" class="contact-link">7550372443</a>
+                        </div>
+                    </div>
+                    <div class="contact-person">
+                        <div class="contact-name">Ms Srimathi</div>
+                        <div class="contact-role">Chairperson, Department of Management Sciences (HiTECH)</div>
+                        <div class="contact-info">
+                            <a href="tel:9080702602" class="contact-link">9944237337</a>
+                        </div>
+                    </div>
+                    <div class="contact-person">
+                        <div class="contact-name">Mr. Antony Michel Thinagar</div>
+                        <div class="contact-role">Vice Chairman, Department of Management Sciences (HiTECH)</div>
+                        <div class="contact-info">
+                            <a href="tel:9080702602" class="contact-link">9791623624</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-section">
+                    <h3 class="contact-section-title">Connect with Us</h3>
+                    <div class="social-links" id="instagramSection">
+                        <div class="contact-section instagram-event-card-wrapper">
+                            <div class="event-card instagram-event-card">
+                                <div class="event-info instagram-accounts">
+                                    <div class="insta-account">
+                                        <div class="insta-meta">
+                                            <img src="images/insta.jpeg" alt="Instagram" class="insta-icon">
+                                            <div>
+                                                <div class="insta-title">HiCET B School</div>
+                                                <div class="insta-handle">@hicet_b_school</div>
+                                            </div>
+                                        </div>
+                                        <p class="insta-desc">Official account for Hindusthan Business School updates and HiMaC announcements.</p>
+                                        <a class="follow-btn" href="https://instagram.com/hicet_b_school" target="_blank" rel="noopener noreferrer">Follow</a>
+                                    </div>
+                                    <div class="insta-account">
+                                        <div class="insta-meta">
+                                            <img src="images/insta.jpeg" alt="Instagram" class="insta-icon">
+                                            <div>
+                                                <div class="insta-title">Hindusthan HiCET</div>
+                                                <div class="insta-handle">@hindusthan.hicet</div>
+                                            </div>
+                                        </div>
+                                        <p class="insta-desc">College-wide updates, events, and campus highlights from HiCET.</p>
+                                        <a class="follow-btn" href="https://www.instagram.com/hindusthan.hicet" target="_blank" rel="noopener noreferrer">Follow</a>
+                                    </div>
+                                    <div class="insta-account">
+                                        <div class="insta-meta">
+                                            <img src="images/insta.jpeg" alt="Instagram" class="insta-icon">
+                                            <div>
+                                                <div class="insta-title">Hindusthan HiTECH</div>
+                                                <div class="insta-handle">@HindusthanHitechMBAl</div>
+                                            </div>
+                                        </div>
+                                        <p class="insta-desc">Official account for Hindusthan Business School updates and HiMaC announcements.</p>
+                                        <a class="follow-btn" href="https://www.instagram.com/hitech_mba?igsh=MWpibTZkaXFlZnd6OA%3D%3D" target="_blank" rel="noopener noreferrer">Follow</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="contact-section facebook-event-card-wrapper">
+                            <div class="event-card facebook-event-card">
+                                <div class="event-info facebook-accounts">
+                                    <div class="facebook-account">
+                                        <div class="facebook-meta">
+                                            <img src="images/facebook.png" alt="Facebook" class="facebook-icon">
+                                            <div>
+                                                <div class="facebook-title">HiCET Official</div>
+                                                <div class="facebook-handle">hicethindusthan</div>
+                                            </div>
+                                        </div>
+                                        <p class="facebook-desc">Official Facebook page for all HiCET college updates and announcements.</p>
+                                        <a class="facebook-btn" href="https://www.facebook.com/hicethindusthan" target="_blank" rel="noopener noreferrer">Follow</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-section linkedin-event-card-wrapper">
+                            <div class="event-card linkedin-event-card">
+                                <div class="event-info linkedin-accounts">
+                                    <div class="linkedin-account">
+                                        <div class="linkedin-meta">
+                                            <img src="images/linkedin.png" alt="LinkedIn" class="linkedin-icon">
+                                            <div>
+                                                <div class="linkedin-title">HiCET College</div>
+                                                <div class="linkedin-handle">Hindusthan Institute of Technology</div>
+                                            </div>
+                                        </div>
+                                        <p class="linkedin-desc">Educational institution page showcasing college achievements, campus life, and recruitment opportunities.</p>
+                                        <a class="linkedin-btn" href="https://www.linkedin.com/school/hicet/" target="_blank" rel="noopener noreferrer">Follow</a>
+                                    </div>
+                                    <div class="linkedin-account">
+                                        <div class="linkedin-meta">
+                                            <img src="images/linkedin.png" alt="LinkedIn" class="linkedin-icon">
+                                            <div>
+                                                <div class="linkedin-title">HiCET MBA</div>
+                                                <div class="linkedin-handle">Hindusthan Business School</div>
+                                            </div>
+                                        </div>
+                                        <p class="linkedin-desc">Professional network page for MBA program updates, alumni connections, and business insights.</p>
+                                        <a class="linkedin-btn" href="https://www.linkedin.com/company/hindusthan-business-school-hicet-mba/" target="_blank" rel="noopener noreferrer">Follow</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="contact-section spotify-event-card-wrapper">
+                            <div class="event-card spotify-event-card">
+                                <div class="event-info spotify-accounts">
+                                    <div class="spotify-account">
+                                        <div class="spotify-meta">
+                                            <img src="images/spotify.png" alt="Spotify" class="spotify-icon">
+                                            <div>
+                                                <div class="spotify-title">Podcast</div>
+                                                <div class="spotify-handle">Official Podcast Series</div>
+                                            </div>
+                                        </div>
+                                        <p class="spotify-desc">Listen to exclusive episodes featuring insights, interviews, and behind-the-scenes stories from HiMaC 2026.</p>
+                                        <a class="spotify-btn" href="https://open.spotify.com/show/6rUxsHOVU1n8AtrlX902ZL?si=PuQ3nKwpQhGMOtwadkgPuw" target="_blank" rel="noopener noreferrer">Listen</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        <div class="contact-section website-event-card-wrapper">
+                            <div class="event-card website-event-card">
+                                <div class="event-info website-accounts">
+                                    <div class="website-account">
+                                        <div class="website-meta">
+                                            <img src="images/hicet-logo.jpg" alt="Website" class="website-icon">
+                                            <div>
+                                                <div class="website-title">HiCET Official</div>
+                                                <div class="website-handle">hicet.ac.in</div>
+                                            </div>
+                                        </div>
+                                        <p class="website-desc">Official college website with course details, admissions, and campus information.</p>
+                                        <a class="website-btn" href="https://hicet.ac.in/" target="_blank" rel="noopener noreferrer">Visit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-section website-event-card-wrapper">
+                            <div class="event-card website-event-card">
+                                <div class="event-info website-accounts">
+                                    <div class="website-account">
+                                        <div class="website-meta">
+                                            <img src="images/hicet-logo.jpg" alt="Website" class="website-icon">
+                                            <div>
+                                                <div class="website-title">HiTECH Official</div>
+                                                <div class="website-handle">hit.edu.in</div>
+                                            </div>
+                                        </div>
+                                        <p class="website-desc">Official college website with course details, admissions, and campus information.</p>
+                                        <a class="website-btn" href="http://hit.edu.in/" target="_blank" rel="noopener noreferrer">Visit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                <!-- Instagram Event Card (two accounts combined) -->
+
+                <div class="contact-section">
+                    <h3 class="contact-section-title">Address</h3>
+                    <div class="address-text">
+                        Department of Management Sciences<br>
+                        Hindusthan College of Engineering and Technology (HiCET)<br>
+                        Hindusthan Institute of Technology (HiTECH)<br>
+                        Valley Campus, Pollachi Highway<br>
+                        Coimbatore - 641032, Tamil Nadu, India<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Modal -->
+    <div class="modal" id="mapModal">
+        <div class="modal-content map-modal-content">
+            <span class="close-btn" id="closeMapModal">&times;</span>
+            <h2 class="modal-title">Location</h2>
+            <div class="modal-body">
+                <div class="map-section">
+                    <div class="address-info">
+                        <h3 class="contact-section-title">Address</h3>
+                        <div class="address-text">
+                            Department of Management Sciences<br>
+                            Hindusthan College of Engineering and Technology (HiCET)<br>
+                            Valley Campus, Pollachi Highway<br>
+                            Coimbatore - 641032, Tamil Nadu, India<br>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5!2d76.9!3d11.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb1%3A0x6fcde3c10e4f3c4e!2sHindusthan%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin&markers=color:red%7Clabel:H%7C11.0,76.9" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0; border-radius: 12px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="HiCET Valley Campus Location">
+                        </iframe>
+                    </div>
+                    <div class="map-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Hindusthan+College+of+Engineering+and+Technology+Valley+Campus+Pollachi+Highway+Coimbatore" 
+                           target="_blank" 
+                           class="map-link-btn">
+                            Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping & Entertainment Modal -->
+    <div class="modal" id="shoppingModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeShoppingModal">&times;</span>
+            <h2 class="modal-title">Shopping & Entertainment - HiMaC 2026</h2>
+            <div class="modal-body">
+                <div class="shopping-section">
+                <img src="images/valari.png" alt="Valari" class="shopping-image">
+                <img src="images/puppy&cat.jpeg" alt="Puppy & Cat" class="shopping-image">
+                <img src="images/horse.png" alt="Horse" class="shopping-image">
+                <img src="images/jignature.png" alt="Jignature" class="shopping-image">
+                <img src="images/Md snacks.jpeg" alt="Md Snacks" class="shopping-image">
+                <img src="images/cavin.jpeg" alt="Cavin" class="shopping-image">
+                <img src="images/arasee.jpeg" alt="Lotus" class="shopping-image">
+            </div>
+            </div>
+            </div>
+    </div>
+
+    <!-- Sponsor Modal -->
+    <div class="modal" id="sponsorModal">
+        <div class="modal-content sponsor-modal-content">
+            <span class="close-btn" id="closeSponsorModal">&times;</span>
+            <div class="modal-body">
+                <h3 class="sponsor-category-title">Title Sponsor</h3>
+                <div class="sponsor-modal-card">
+                    <div class="sponsor-modal-image">
+                        <img src="images/titlesponsor.png" alt="anuswa" class="sponsor-modal-img">
+                    </div>
+                    <div class="sponsor-modal-info">
+                        <h2 class="sponsor-modal-title"> VSS Anuswaryaa Industry E-Vehicle Charging Station</h2>
+                        <div class="sponsor-modal-description"></div>
+                        <p>VSS Anushwarya Industry is a forward-thinking company delivering innovative, eco-friendly and technology-driven infrastructure solutions designed for modern cities, institutions, and commercial environments. </p>
+                        <div class="sponsor-modal-description hidden-content" id="sponsorContent1">
+                            <h3 class="sponsor-modal-title">Our Vision</h3>
+                            <p>To build a cleaner, smarter and more sustainable future by providing infrastructure solutions that deliver social impact, environmental benefits, and long-term revenue opportunities.</p>
+                            <h3 class="sponsor-modal-title">Our NEXT GEN Products</h3>
+                            <p>EV Charging Stations / EV Parks (App-based operation, no manpower needed, recurring revenue model, supports green mobility), Customized Smart Vending Machines (Fully automated sales, low operating cost, ad revenue through LED display, passive income opportunity), LED Water Purifier cum Dispenser (Safe drinking water solution, QR-code cashless payment, business income model, eco-friendly system)
+</p>
+                            <p>Indoor CO₂ Control System (Relax Air) (Improves indoor air quality, reduces fatigue & headaches, smart CO₂ monitoring, boosts productivity in closed spaces), Solar Smart Waste Compactor Bins (Solar-powered operation, reduces waste collection frequency, IOT sensor monitoring, ideal for smart city waste management), <br> <br>Vacuum Toilets (Major water saving, odour-free & hygienic, low maintenance, suitable for high-usage public areas), Sanitary Napkin Vending Machines (Ensures menstrual hygiene access, fully automated dispensing, essential for schools & workplaces, promotes women’s health), Sanitary Napkin Destroyer Machines (Safe and hygienic disposal, reduces restroom waste issues, eco-friendly method, improves sanitation standards)
+</p>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleContent('sponsorContent1', this)">Read More</button>
+                        <div class="sponsor-modal-description"></div>
+                        <div class="sponsor-modal-links">
+                            <a href="https://anushglobal.com/" target="_blank" rel="noopener noreferrer" class="sponsor-modal-link website-link">
+                                <strong>Visit Website</strong>
+                            </a>
+                            <a href="https://www.instagram.com/anush.india/" target="_blank" rel="noopener noreferrer" class="sponsor-modal-link instagram-link">
+                                <strong>Follow on Instagram</strong>
+                            </a>
+                             <a href="https://www.linkedin.com/company/anuswaryaa-enterprises-pvt-ltd/" target="_blank" rel="noopener noreferrer" class="sponsor-modal-link instagram-link">
+                                <strong>Follow on LinkedIn</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="sponsor-category-title" style="margin-top: 40px;">Associate Sponsor</h3>
+                <div class="sponsor-modal-card" style="margin-top: 20px;">
+                    <div class="sponsor-modal-image">
+                        <img src="images/associate.jpg" alt="jignature" class="sponsor-modal-img">
+                    </div>
+                    <div class="sponsor-modal-info">
+                        <h2 class="sponsor-modal-title">Jignature</h2>
+                        <div class="sponsor-modal-description"> 
+                            <p>Jignature Foods Private Limited — a trusted beverage brand.Reviving the classic Jigarthanda with a modern touch.
+                            Delivering signature Jigarthanda, crafted fresh with natural ingredients.
+                            Trusted by millions, with 120+ outlets across India and global markets.A brand built on authenticity, quality, and innovation.</p>
+                        </div>
+                        <div class="sponsor-modal-links">
+                            <a href="https://jignature.com/" target="_blank" rel="noopener noreferrer" class="sponsor-modal-link website-link">
+                                <strong>Visit Website</strong>
+                            </a>
+                            <a href="https://www.instagram.com/jignature_official?igsh=MTI3NHMza21xeGJrYg%3D%3D" target="_blank" rel="noopener noreferrer" class="sponsor-modal-link instagram-link">
+                                <strong>Follow on Instagram</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="sponsor-category-title" style="margin-top: 40px;">Support Sponsor</h3>
+                <div class="sponsor-modal-card" style="margin-top: 40px;">
+                    <div class="sponsor-modal-image">
+                        <img src="images/supports.png" alt="STORYS" class="sponsor-modal-img">
+                    </div>
+                    <div class="sponsor-modal-info">
+                        <h2 class="sponsor-modal-title">the STORYS EventSpace</h2>
+                        <div class="sponsor-modal-description">
+                            <p>A Space Designed to Tell Your Story</p>
+                            <p>Tucked away amidst the serene coconut groves along the Pollachi-Coimbatore highway, STORYS is a thoughtfully designed venue that blends subtle elegance with contemporary functionality. Whether it's a grand wedding, an intimate celebration, or a corporate gathering, our space offers a seamless balance of comfort, design, and convenience.</p>
+                            <p>The design reflects a deep connection to its surroundings. The pitched roofs pay homage to the local context, while clean, contemporary lines and earthy tones create a harmonious environment. At Storys, every element is designed to enhance your story. Our venue becomes a canvas for your vision, providing the perfect setting for life's most meaningful moments.</p>
+                        </div>
+                        <div class="sponsor-modal-links">
+                            <a href="https://thestorys.in/" target="_blank" rel="noopener noreferrer" class="sponsor-modal-link website-link">
+                                <strong>Visit Website</strong>
+                            </a>
+                            <a href="https://www.instagram.com/storys.space" target="_blank" rel="noopener noreferrer" class="sponsor-modal-link instagram-link">
+                                <strong>Follow on Instagram</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sponsor-modal-card" style="margin-top: 20px;">
+                    <div class="sponsor-modal-image">
+                        <img src="images/support3.jpg" alt="STORYS" class="sponsor-modal-img">
+                    </div>
+                    <div class="sponsor-modal-info">
+                        <h2 class="sponsor-modal-title">Phd  community for freshers </h2>
+                        <div class="sponsor-modal-description">
+                            <p>PhD is a community built for freshers with one simple purpose — guidance.
+It was started to help students find the right mentors and clear career direction.
+We support freshers in preparing for real-world roles through focused mentoring and assistance.
+Our goal is to help them confidently move toward their dream jobs.</p>
+                        </div>
+                        <div class="sponsor-modal-links">
+                            <a href="https://www.linkedin.com/in/pankaj-dhankhar-62031a277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" class="sponsor-modal-link website-link">
+                                <strong>Follow  on linkedIn</strong>
+                            </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
