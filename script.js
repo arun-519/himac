@@ -161,9 +161,9 @@ const eventData = {
             { name: 'Ms.Abinaya S', phone: '+91-99943 86854' }
         ]
     },
-    'Hpl-auction': {
+    'Ipl-auction': {
         category: 'Non-Technical Events',
-        title: 'HPL Auction',
+        title: 'IPL Auction',
         description: 'Cricket Team Auction Simulation - Experience the thrill of an IPL-style auction. Build your dream team and compete in this exciting event.',
         color: 'green',
         registrationUrl: 'https://forms.gle/khL6FC18kpvS52or7',
