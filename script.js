@@ -334,8 +334,8 @@ const eventGuidance = {
             'Judges’ decisions are final.'
         ]
     },
-    'Hpl-auction': {
-        title: 'HPL Auction – Guidelines',
+    'Ipl-auction': {
+        title: 'IPL Auction – Guidelines',
         points: [
             '4 members per team.',
             'Each team has a fixed budget to buy players.',
