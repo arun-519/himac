@@ -2534,6 +2534,38 @@ body {
     font-weight: bold;
 }
 
+/* PDF Download Styling */
+.pdf-download-section {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px solid #e0e0e0;
+    text-align: center;
+}
+
+.pdf-download-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    cursor: pointer;
+}
+
+.pdf-download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.6);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.pdf-download-btn:active {
+    transform: translateY(0);
+}
+
 /* Responsive Design for Guidelines Modal */
 @media (max-width: 768px) {
     .guidelines-modal-content {
