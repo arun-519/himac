@@ -256,58 +256,6 @@ body {
     border-bottom: 2px solid #d32f2f;
 }
 
-/* Nav dropdown mini event card */
-.nav-dropdown {
-    position: relative;
-}
-.nav-dropdown-content {
-    position: absolute;
-    top: calc(100% + 8px);
-    left: 0;
-    min-width: 220px;
-    background: #ffffff;
-    border: 1px solid rgba(0,0,0,0.06);
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-    display: none;
-    z-index: 1200;
-}
-.nav-dropdown:hover .nav-dropdown-content,
-.nav-dropdown:focus-within .nav-dropdown-content {
-    display: block;
-}
-.event-card-mini {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.event-card-mini-body {
-    padding: 6px 4px;
-}
-.event-mini-title {
-    margin: 0;
-    font-size: 14px;
-    color: #d32f2f;
-    font-weight: 700;
-    line-height: 1.15;
-}
-.event-mini-sub {
-    margin: 4px 0 0 0;
-    font-size: 13px;
-    color: #444;
-}
-
-@media (max-width: 768px) {
-    .nav-dropdown-content {
-        position: static;
-        box-shadow: none;
-        border: none;
-        padding: 8px 0;
-        background: transparent;
-    }
-}
-
 
 
 .profile-btn {
@@ -2586,38 +2534,6 @@ body {
     font-weight: bold;
 }
 
-/* PDF Download Styling */
-.pdf-download-section {
-    margin-top: 25px;
-    padding-top: 20px;
-    border-top: 2px solid #e0e0e0;
-    text-align: center;
-}
-
-.pdf-download-btn {
-    display: inline-block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: #ffffff;
-    padding: 12px 30px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
-    cursor: pointer;
-}
-
-.pdf-download-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.6);
-    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-}
-
-.pdf-download-btn:active {
-    transform: translateY(0);
-}
-
 /* Responsive Design for Guidelines Modal */
 @media (max-width: 768px) {
     .guidelines-modal-content {
@@ -2754,20 +2670,30 @@ body {
     color: #F57F17;
     font-weight: 500;
 }
-/* Shopping modal title specific styling */
-.shopping-title {
-    font-family: 'Playfair Display', 'Poppins', serif;
-    font-size: 1.25rem;
-    color: #d32f2f;
-    font-weight: 700;
+
+/* Developer Credit Section */
+.developer-credit {
     text-align: center;
-    margin: 12px 0 18px 0;
-    letter-spacing: 0.2px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin-top: 40px;
 }
 
-@media (max-width: 480px) {
-    .shopping-title {
-        font-size: 1.05rem;
-    }
+.developer-credit p {
+    margin: 5px 0;
+    font-size: 14px;
 }
 
+.developer-credit strong {
+    color: #d32f2f;
+}
+
+.developer-credit .dev-notes {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+}
