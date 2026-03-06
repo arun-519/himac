@@ -98,7 +98,7 @@ const eventData = {
         title: 'BI BATTLE (Data Visualization)',
         description: 'Business Intelligence Competition - Showcase your data analytics and business intelligence skills through competitive challenges and case studies.',
         color: 'blue',
-        registrationUrl: 'https://forms.gle/p8GhQYeqK3MGYG36A',
+        registrationUrl: 'https://forms.gle/pgykxoEdprE2QvrGA',
         organizerContacts: [
             { name: 'Mr.Sri Ram R', phone: '+91-63830 24512' },
             { name: 'Mr.Kanishkha Chella E', phone: '+91-94899 63004' },
@@ -109,7 +109,7 @@ const eventData = {
         title: 'STOCK WAR',
         description: 'Stock Market Trading Competition - Test your financial acumen and trading strategies in an exciting simulated stock market environment.',
         color: 'green',
-        registrationUrl: 'https://forms.gle/4ZBAX1qXxTeVm4p87',
+        registrationUrl: 'https://forms.gle/yjFfR9H2WdSAyhPK7',
         organizerContacts: [
             { name: 'Ms. Swathilakshmi CV', phone: '+91-8078851872' },
             { name: 'Mr. Vigneswaran S', phone: '+91-8825724369' }
@@ -120,7 +120,7 @@ const eventData = {
         title: 'BEST MANAGER',
         description: 'Leadership & Management Competition - Demonstrate exceptional leadership and management skills through strategic business scenarios and team challenges.',
         color: 'purple',
-        registrationUrl: 'https://forms.gle/Yi1RJXCMuxmEqWpQ6',
+        registrationUrl: 'https://forms.gle/u38YHckHmerSvTsV7',
         organizerContacts: [
             { name: 'Mr.Udhayanithi S', phone: '+91-72007 08938' },
             { name: 'Mr.Vengatesh K', phone: '+91-97513 93844' },
@@ -131,7 +131,7 @@ const eventData = {
         title: 'Project Expo',
         description: 'Entrepreneurship Development Showcase - Display your Prototype and entrepreneurial projects to investors and mentors.',
         color: 'orange',
-        registrationUrl: 'https://forms.gle/uRL8KnMfFmAJmtpX9',
+        registrationUrl: 'https://forms.gle/xDdLy6apQeST9UrH8',
         organizerContacts: [
             { name: 'Ms.Josephin Rasula', phone: '+91-86107 63539' },
             { name: 'Mr. Jefrin', phone: '+91-93454 14653' },
@@ -142,7 +142,7 @@ const eventData = {
         title: 'Talent Show',
         description: 'Quick Talent Showcase - Showcase your unique talents in just one minute. A fast-paced competition where creativity meets brevity.',
         color: 'orange',
-        registrationUrl: 'https://forms.gle/FUSo46xjWJQsi4UH7',
+        registrationUrl: 'https://forms.gle/pVUC289eBYt3xgK97',
         organizerContacts: [
             { name: 'Mr.G.Sharath', phone: '+91-73971 54670' },
             { name: 'Ms.Srimathi.S', phone: '+91-70105 93891' },
@@ -154,7 +154,7 @@ const eventData = {
         title: 'Mime',
         description: 'Silent Performance Art - Express stories and emotions through the art of mime. A competition celebrating non-verbal communication and artistic expression.',
         color: 'purple',
-        registrationUrl: 'https://forms.gle/LufUuK9RzNRcBKzQ7',
+        registrationUrl: 'https://forms.gle/9at2CGEBPF8RjAt37',
         organizerContacts: [
             { name: 'Mr.Kishore R', phone: '+91-95976 12550' },
             { name: 'Mr.Gokul S', phone: '+91-82208 16426' },
@@ -166,7 +166,7 @@ const eventData = {
         title: 'IPL Auction',
         description: 'Cricket Team Auction Simulation - Experience the thrill of an IPL-style auction. Build your dream team and compete in this exciting event.',
         color: 'green',
-        registrationUrl: 'https://forms.gle/khL6FC18kpvS52or7',
+        registrationUrl: 'https://forms.gle/BvxSf6rVToBbAJZg8',
         organizerContacts: [
             { name: 'Mr.Dinesh Kumar', phone: '+91-70103 10419' },
             { name: 'Ms.Kowslaya .M', phone: '+91-88380 32990' },
@@ -178,7 +178,7 @@ const eventData = {
         title: 'Face Painting',
         description: 'Creative Art Competition - Transform faces into stunning canvases of art through vibrant, themed face painting designs.',
         color: 'pink',
-        registrationUrl: 'https://forms.gle/dYGUhsu858EH7UV3A',
+        registrationUrl: 'https://forms.gle/HbU721XZTKL7Z8uK9',
         organizerContacts: [
             { name: 'Ms.Fazeena', phone: '+91-85904 72387' },
             { name: 'Ms.Nandhini S.B', phone: '+91-93800 05040' },
@@ -190,7 +190,7 @@ const eventData = {
         title: 'Brand to Boardroom (Quiz & Digitalise it)',
         description: 'Brand Management & Corporate Strategy Competition - Transform your brand vision into boardroom success through strategic planning and brand positioning challenges.',
         color: 'blue',
-        registrationUrl: 'https://forms.gle/MqcnoBEDNsKHrjFNA',
+        registrationUrl: 'https://forms.gle/zqsNceSqV16inpo78',
         organizerContacts: [
             { name: 'Mr. Jashwa', phone: '+91-8608774454' },
             { name: 'Mr. Pown Kumar ', phone: '+91-87548 86957' },
@@ -201,7 +201,7 @@ const eventData = {
         title: 'STRATEGIX (Business Simulation)',
         description: 'Strategic Management Competition - Test your strategic thinking and decision-making skills in complex business scenarios and competitive strategy challenges.',
         color: 'purple',
-        registrationUrl: 'https://forms.gle/sHm7hBZnEGfV8MtBA',
+        registrationUrl: 'https://forms.gle/obs1dehCsGk4tM44A',
         organizerContacts: [
             { name: 'Mr. Pravin V', phone: '+91-88500 36868' },
             { name: 'Mr.Kavin Siddharth B', phone: '+91-97912 82410' },
@@ -212,7 +212,7 @@ const eventData = {
         title: 'Vibrant Ventures (Idea / Business Plan Pitching)',
         description: 'Entrepreneurship & Innovation Showcase - Present your innovative startup ideas, business models, and entrepreneurial ventures to a panel of judges and potential investors.',
         color: 'cyan',
-        registrationUrl: 'https://forms.gle/bRcbECBuymh7aijS7',
+        registrationUrl: 'https://forms.gle/ax67xm7TK75jBxUV9',
         organizerContacts: [
             { name: 'Ms. Josephin Rasula I', phone: '+91-86107 63539' },
             { name: 'Mr. Jefrin', phone: '+91-93454 14653' },
@@ -223,7 +223,7 @@ const eventData = {
         title: 'Treasure Hunt',
         description: 'A thrilling adventure where participants solve clues and puzzles to find hidden treasures.',
         color: 'gold',
-        registrationUrl: 'https://forms.gle/MihxTH8CP3HuD7Yh9',
+        registrationUrl: 'https://forms.gle/exRLjDzaGNezBhcC6',
         organizerContacts: [
             { name: 'Mr.Prabhu S', phone: '+91-95244 20445' },
             { name: 'Mr.Kathirvelavan G', phone: '+91-82481 05167' },
